@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { assetPath } from "@/lib/paths";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,7 +86,7 @@ export default function StellaLuxMotion({ content }) {
   return (
     <div className="motion-layer">
       <a className="floating-star" href={phoneHref} aria-label={content.finalCta.secondary}>
-        <Image src="/images/logo/stellaLux-colored.svg" alt="" width={136} height={122} />
+        <Image src={assetPath("/images/logo/stellaLux-colored.svg")} alt="" width={136} height={122} />
         <span>{content.finalCta.secondary}</span>
       </a>
     </div>

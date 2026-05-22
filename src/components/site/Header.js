@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
   return (
@@ -8,7 +9,7 @@ export default function Header({ locale, content }) {
       <div className="site-header__inner">
         <Link href={`/${locale}`} className="site-header__brand" aria-label="Stella Lux">
           <Image
-            src="/images/logo/stella-lux-logo-img.webp"
+            src={assetPath("/images/logo/stella-lux-logo-img.webp")}
             alt="Stella Lux"
             width={140}
             height={40}

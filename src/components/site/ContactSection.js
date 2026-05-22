@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/paths";
 
 export default function ContactSection({ content }) {
   return (
@@ -30,7 +31,7 @@ export default function ContactSection({ content }) {
 
         <div className="contact-card__person" aria-hidden="true">
           <Image
-            src="/images/people/trustworthy-teacher.png"
+            src={assetPath("/images/people/trustworthy-teacher.png")}
             alt=""
             width={640}
             height={960}

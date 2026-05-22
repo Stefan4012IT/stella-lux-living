@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { locales } from "@/lib/i18n";
+import { assetPath } from "@/lib/paths";
 import { stellaLuxContent } from "@/content/stellaLuxContent";
 
 export default function Footer({ locale, content }) {
@@ -9,7 +10,7 @@ export default function Footer({ locale, content }) {
       <div className="section-shell site-footer__inner">
         <div>
           <Image
-            src="/images/logo/stella-lux-logo-img.webp"
+            src={assetPath("/images/logo/stella-lux-logo-img.webp")}
             alt="Stella Lux"
             width={126}
             height={36}

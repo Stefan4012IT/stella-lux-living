@@ -1,4 +1,5 @@
 import { Bricolage_Grotesque, Nunito_Sans } from "next/font/google";
+import { assetPath } from "@/lib/paths";
 import "@/styles/globals.scss";
 
 const nunitoSans = Nunito_Sans({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       lang="sr"
       data-scroll-behavior="smooth"
       className={`${nunitoSans.variable} ${bricolageGrotesque.variable} scroll-smooth antialiased`}
+      style={{ "--section-0-bg": `url(${assetPath("/images/backgrounds/section-0-reggio-bg.png")})` }}
     >
       <body>{children}</body>
     </html>

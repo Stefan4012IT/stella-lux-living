@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/paths";
 
 export default function Intro({ content }) {
   return (
@@ -11,7 +12,7 @@ export default function Intro({ content }) {
 
         <div className="image-panel image-panel--intro motion-reveal">
           <Image
-            src="/images/store/children-classroom-portrait.png"
+            src={assetPath("/images/store/children-classroom-portrait.png")}
             alt={content.pillarsTitle}
             fill
             sizes="(min-width: 1024px) 38rem, 100vw"

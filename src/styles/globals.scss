@@ -99,7 +99,7 @@ p {
     linear-gradient(135deg, rgba(251, 248, 242, 0.88), rgba(232, 243, 248, 0.74)),
     radial-gradient(circle at 16% 22%, rgba(240, 198, 111, 0.16), transparent 20rem),
     radial-gradient(circle at 84% 76%, rgba(173, 203, 224, 0.24), transparent 24rem),
-    url("/images/backgrounds/section-0-reggio-bg.png") center / cover;
+    var(--section-0-bg) center / cover;
 }
 
 .section-shell {
@@ -504,7 +504,7 @@ p {
 
 .age-card {
   position: relative;
-  min-height: clamp(25rem, 38vw, 34rem);
+  min-height: clamp(22rem, 30vw, 25rem);
   overflow: hidden;
   border-radius: var(--radius-lg);
   background:

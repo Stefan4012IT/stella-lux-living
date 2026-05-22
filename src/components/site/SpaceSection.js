@@ -1,18 +1,19 @@
 import SpaceShowcase from "@/components/ui/SpaceShowcase";
+import { assetPath } from "@/lib/paths";
 
 export default function SpaceSection({ content }) {
   const showcaseItems = [
     {
       title: content.space.stats[0],
-      src: "/images/store/creative-playroom-blocks.jpg",
+      src: assetPath("/images/store/creative-playroom-blocks.jpg"),
     },
     {
       title: content.space.stats[1],
-      src: "/images/store/classroom-library-shelf.jpg",
+      src: assetPath("/images/store/classroom-library-shelf.jpg"),
     },
     {
       title: content.space.stats[2],
-      src: "/images/store/child-classroom-smile.png",
+      src: assetPath("/images/store/child-classroom-smile.png"),
     },
   ];
 

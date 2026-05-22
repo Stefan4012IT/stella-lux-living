@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/paths";
+
 export default function Experience({ content }) {
   const pillarImages = [
     "/images/store/children-playroom-group.jpg",
@@ -20,7 +22,7 @@ export default function Experience({ content }) {
             <article
               key={pillar.title}
               className="pillar-card motion-reveal"
-              style={{ "--pillar-image": `url(${pillarImages[index % pillarImages.length]})` }}
+              style={{ "--pillar-image": `url(${assetPath(pillarImages[index % pillarImages.length])})` }}
             >
               <span>{String(index + 1).padStart(2, "0")}</span>
               <h3>{pillar.title}</h3>

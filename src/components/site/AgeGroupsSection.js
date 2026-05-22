@@ -1,8 +1,10 @@
+import { assetPath } from "@/lib/paths";
+
 export default function AgeGroupsSection({ content }) {
   const ageImages = [
     "/images/store/child-classroom-smile.png",
-    "/images/store/children-playroom-group.jpg",
     "/images/store/classroom-group-hug.png",
+    "/images/store/children-playroom-group.jpg",
   ];
 
   return (
@@ -18,7 +20,7 @@ export default function AgeGroupsSection({ content }) {
             <article
               key={item.title}
               className="age-card motion-reveal"
-              style={{ "--age-image": `url(${ageImages[index % ageImages.length]})` }}
+              style={{ "--age-image": `url(${assetPath(ageImages[index % ageImages.length])})` }}
             >
               <div className="age-card__content">
                 <span>{item.age}</span>

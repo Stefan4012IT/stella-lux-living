@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/paths";
 
 export default function Hero({ content }) {
   return (
@@ -24,7 +25,7 @@ export default function Hero({ content }) {
         <div className="hero__visual motion-reveal">
           <div className="hero-card">
             <Image
-              src="/images/store/classroom-group-hug.png"
+              src={assetPath("/images/store/classroom-group-hug.png")}
               alt={content.pillarsTitle}
               fill
               priority

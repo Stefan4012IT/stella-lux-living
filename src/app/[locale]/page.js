@@ -14,6 +14,7 @@ import SpaceSection from "@/components/site/SpaceSection";
 import StellaLuxMotion from "@/components/ui/StellaLuxMotion";
 import { stellaLuxContent } from "@/content/stellaLuxContent";
 import { isLocale, locales } from "@/lib/i18n";
+import { basePath } from "@/lib/paths";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -32,8 +33,8 @@ export async function generateMetadata({ params }) {
     title: content.metadata.title,
     description: content.metadata.description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(locales.map((item) => [item, `/${item}`])),
+      canonical: `${basePath}/${locale}/`,
+      languages: Object.fromEntries(locales.map((item) => [item, `${basePath}/${item}/`])),
     },
   };
 }
