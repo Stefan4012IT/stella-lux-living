@@ -1,0 +1,19 @@
+export default function FinalCta({ content }) {
+  return (
+    <section className="section section--cream final-cta">
+      <div className="section-shell">
+        <div className="final-cta__panel motion-reveal">
+          <h2>{content.finalCta.title}</h2>
+          <div className="final-cta__actions">
+            <a href={`tel:${content.contact.phone.replaceAll(" ", "")}`} className="button button--light">
+              {content.finalCta.primary}
+            </a>
+            <a href={`tel:${content.contact.phone.replaceAll(" ", "")}`} className="button button--outline">
+              {content.contact.phone}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
