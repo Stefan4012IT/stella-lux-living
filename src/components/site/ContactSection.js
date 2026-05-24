@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { assetPath } from "@/lib/paths";
 
@@ -8,9 +8,6 @@ const initialForm = {
   fullName: "",
   email: "",
   phone: "",
-  childAge: "",
-  preferredContact: "",
-  message: "",
   company: "",
 };
 
@@ -38,18 +35,6 @@ function getValidation(form, labels) {
     errors.phone = labels.errors.phone;
   }
 
-  if (!form.childAge) {
-    errors.childAge = labels.errors.childAge;
-  }
-
-  if (!form.preferredContact) {
-    errors.preferredContact = labels.errors.preferredContact;
-  }
-
-  if (form.message.length > 800) {
-    errors.message = labels.errors.message;
-  }
-
   return errors;
 }
 
@@ -63,7 +48,6 @@ export default function ContactSection({ locale, content }) {
   const [successOpen, setSuccessOpen] = useState(false);
 
   const isSending = status === "sending";
-  const messageCount = useMemo(() => `${form.message.length}/800`, [form.message.length]);
 
   function updateField(event) {
     const { name, value } = event.target;
@@ -109,9 +93,6 @@ export default function ContactSection({ locale, content }) {
     payload.append("fullName", form.fullName.trim());
     payload.append("email", form.email.trim().toLowerCase());
     payload.append("phone", form.phone.trim());
-    payload.append("childAge", form.childAge);
-    payload.append("preferredContact", form.preferredContact);
-    payload.append("message", form.message.trim());
     payload.append("locale", locale);
     payload.append("source", window.location.href);
     payload.append("submittedAt", submittedAt);
@@ -136,30 +117,10 @@ export default function ContactSection({ locale, content }) {
   return (
     <section className="section contact-section" id="kontakt">
       <div className="section-shell contact-card motion-reveal">
-        <div className="contact-card__top">
-          <div className="contact-card__copy">
-            <p className="eyebrow eyebrow--muted">{labels.eyebrow}</p>
-            <h2>{labels.title}</h2>
-            <p>{labels.text}</p>
-            <dl className="contact-card__details">
-              {labels.details.map((item) => (
-                <div key={item.label}>
-                  <dt>{item.label}</dt>
-                  <dd>{item.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-
-          <div className="contact-card__person" aria-hidden="true">
-            <Image
-              src={assetPath("/images/people/trustworthy-teacher.png")}
-              alt=""
-              width={640}
-              height={960}
-              sizes="(min-width: 1024px) 28rem, 70vw"
-            />
-          </div>
+        <div className="contact-card__copy">
+          <p className="eyebrow eyebrow--muted">{labels.eyebrow}</p>
+          <h2>{labels.title}</h2>
+          <p>{labels.text}</p>
         </div>
 
         <form className="contact-form" onSubmit={submitForm} noValidate>
@@ -193,22 +154,6 @@ export default function ContactSection({ locale, content }) {
           </label>
 
           <label className="contact-form__field">
-            <span>{labels.phone}</span>
-            <input
-              type="tel"
-              name="phone"
-              value={form.phone}
-              onChange={updateField}
-              autoComplete="tel"
-              inputMode="tel"
-              aria-invalid={Boolean(errors.phone)}
-              aria-describedby={errors.phone ? "phone-error" : undefined}
-              required
-            />
-            {errors.phone ? <small id="phone-error">{errors.phone}</small> : null}
-          </label>
-
-          <label className="contact-form__field">
             <span>{labels.email}</span>
             <input
               type="email"
@@ -224,58 +169,19 @@ export default function ContactSection({ locale, content }) {
           </label>
 
           <label className="contact-form__field">
-            <span>{labels.childAge}</span>
-            <select
-              name="childAge"
-              value={form.childAge}
+            <span>{labels.phone}</span>
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone}
               onChange={updateField}
-              aria-invalid={Boolean(errors.childAge)}
-              aria-describedby={errors.childAge ? "childAge-error" : undefined}
+              autoComplete="tel"
+              inputMode="tel"
+              aria-invalid={Boolean(errors.phone)}
+              aria-describedby={errors.phone ? "phone-error" : undefined}
               required
-            >
-              <option value="">{labels.selectPlaceholder}</option>
-              {labels.childAgeOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-            {errors.childAge ? <small id="childAge-error">{errors.childAge}</small> : null}
-          </label>
-
-          <label className="contact-form__field contact-form__field--wide">
-            <span>{labels.preferredContact}</span>
-            <select
-              name="preferredContact"
-              value={form.preferredContact}
-              onChange={updateField}
-              aria-invalid={Boolean(errors.preferredContact)}
-              aria-describedby={errors.preferredContact ? "preferredContact-error" : undefined}
-              required
-            >
-              <option value="">{labels.selectPlaceholder}</option>
-              {labels.preferredContactOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-            {errors.preferredContact ? <small id="preferredContact-error">{errors.preferredContact}</small> : null}
-          </label>
-
-          <label className="contact-form__field contact-form__field--wide">
-            <span>{labels.message}</span>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={updateField}
-              rows={4}
-              maxLength={800}
-              aria-invalid={Boolean(errors.message)}
-              aria-describedby={errors.message ? "message-error message-count" : "message-count"}
             />
-            <em id="message-count">{messageCount}</em>
-            {errors.message ? <small id="message-error">{errors.message}</small> : null}
+            {errors.phone ? <small id="phone-error">{errors.phone}</small> : null}
           </label>
 
           {notice ? (
@@ -289,6 +195,15 @@ export default function ContactSection({ locale, content }) {
           </button>
         </form>
 
+        <div className="contact-card__person" aria-hidden="true">
+          <Image
+            src={assetPath("/images/people/trustworthy-teacher.png")}
+            alt=""
+            width={640}
+            height={960}
+            sizes="(min-width: 1024px) 28rem, 70vw"
+          />
+        </div>
       </div>
 
       {successOpen ? (

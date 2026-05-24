@@ -2,12 +2,12 @@ import { assetPath } from "@/lib/paths";
 
 export default function Experience({ content }) {
   const pillarImages = [
-    "/images/store/children-playroom-group.jpg",
-    "/images/store/learning-shelf-books.jpg",
-    "/images/store/toys-and-books-detail.jpg",
-    "/images/store/children-classroom-portrait.png",
-    "/images/store/creative-playroom-blocks.jpg",
-    "/images/store/classroom-library-shelf.jpg",
+    "/images/experience/01-ljubav-i-briga.png",
+    "/images/experience/02-reggio-ucenje.png",
+    "/images/experience/03-ucenje-kroz-iskustvo.png",
+    "/images/experience/04-celovit-razvoj.png",
+    "/images/experience/05-kultura-i-priroda.png",
+    "/images/experience/06-visoki-standardi.png",
   ];
 
   return (

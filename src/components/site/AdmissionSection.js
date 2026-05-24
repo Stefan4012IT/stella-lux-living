@@ -3,7 +3,7 @@ import { MealIcon } from "./ProgramIcons";
 
 export default function AdmissionSection({ content }) {
   return (
-    <section className="section section--white admission">
+    <section id="upis" className="section section--white admission">
       <div className="section-shell admission__grid">
         <div className="nutrition-card motion-reveal">
           <h2>{content.nutrition.title}</h2>

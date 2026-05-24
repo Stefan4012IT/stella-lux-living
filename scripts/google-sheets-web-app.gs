@@ -4,9 +4,6 @@ const HEADERS = [
   "fullName",
   "phone",
   "email",
-  "childAge",
-  "preferredContact",
-  "message",
   "locale",
   "source",
 ];
@@ -57,9 +54,6 @@ function validateLead(data) {
   const fullName = cleanValue(data.fullName || "");
   const email = cleanValue(data.email || "");
   const phone = cleanValue(data.phone || "");
-  const childAge = cleanValue(data.childAge || "");
-  const preferredContact = cleanValue(data.preferredContact || "");
-  const message = cleanValue(data.message || "");
 
   if (fullName.length < 3) {
     errors.push("fullName");
@@ -71,18 +65,6 @@ function validateLead(data) {
 
   if (phone.replace(/[^\d+]/g, "").length < 8) {
     errors.push("phone");
-  }
-
-  if (!childAge) {
-    errors.push("childAge");
-  }
-
-  if (!preferredContact) {
-    errors.push("preferredContact");
-  }
-
-  if (message.length > 800) {
-    errors.push("message");
   }
 
   return errors;

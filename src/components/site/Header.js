@@ -4,6 +4,8 @@ import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
+  const navLinks = ["#section-1", "#section-2", "#section-3", "#upis"];
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
@@ -19,7 +21,7 @@ export default function Header({ locale, content }) {
 
         <nav className="site-header__nav">
           {content.nav.map((item, index) => (
-            <a key={item} href={`#section-${index}`}>
+            <a key={item} href={navLinks[index]}>
               {item}
             </a>
           ))}

@@ -13,10 +13,10 @@ export default function Hero({ content }) {
           <p className="hero__text">{content.hero.text}</p>
 
           <div className="hero__actions">
-            <a href="#section-3" className="button button--ink">
+            <a href="#kontakt" className="button button--ink">
               {content.hero.primaryCta}
             </a>
-            <a href="#section-3" className="button button--glass">
+            <a href="#upis" className="button button--glass">
               {content.hero.secondaryCta}
             </a>
           </div>

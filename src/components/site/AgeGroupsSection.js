@@ -2,9 +2,9 @@ import { assetPath } from "@/lib/paths";
 
 export default function AgeGroupsSection({ content }) {
   const ageImages = [
-    "/images/store/child-classroom-smile.png",
-    "/images/store/classroom-group-hug.png",
-    "/images/store/children-playroom-group.jpg",
+    "/images/age-groups/01-najmladji-istrazivaci.png",
+    "/images/age-groups/02-radoznali-malisani.png",
+    "/images/age-groups/03-predskolci-spremni-za-svet.png",
   ];
 
   return (
