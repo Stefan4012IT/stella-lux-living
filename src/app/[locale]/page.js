@@ -61,7 +61,7 @@ export default async function LocalePage({ params }) {
       <SpaceSection content={content} />
       <ProgramSection content={content} />
       <AdmissionSection content={content} />
-      <ContactSection content={content} />
+      <ContactSection locale={locale} content={content} />
       <FinalCta content={content} />
       <Footer locale={locale} content={content} />
     </main>

@@ -1,0 +1,97 @@
+const SHEET_NAME = "lead";
+const HEADERS = [
+  "submittedAt",
+  "fullName",
+  "phone",
+  "email",
+  "childAge",
+  "preferredContact",
+  "message",
+  "locale",
+  "source",
+];
+
+function doPost(event) {
+  const data = event && event.parameter ? event.parameter : {};
+
+  if (data.company) {
+    return jsonResponse({ ok: true, spam: true });
+  }
+
+  const errors = validateLead(data);
+
+  if (errors.length > 0) {
+    return jsonResponse({ ok: false, errors });
+  }
+
+  const sheet = getLeadSheet();
+  sheet.appendRow(
+    HEADERS.map((header) => {
+      if (header === "submittedAt") {
+        return data.submittedAt || new Date().toISOString();
+      }
+
+      return cleanValue(data[header] || "");
+    }),
+  );
+
+  return jsonResponse({ ok: true });
+}
+
+function getLeadSheet() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName(SHEET_NAME) || spreadsheet.insertSheet(SHEET_NAME);
+  const firstRow = sheet.getRange(1, 1, 1, HEADERS.length).getValues()[0];
+  const hasHeaders = HEADERS.every((header, index) => firstRow[index] === header);
+
+  if (!hasHeaders) {
+    sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
+    sheet.setFrozenRows(1);
+  }
+
+  return sheet;
+}
+
+function validateLead(data) {
+  const errors = [];
+  const fullName = cleanValue(data.fullName || "");
+  const email = cleanValue(data.email || "");
+  const phone = cleanValue(data.phone || "");
+  const childAge = cleanValue(data.childAge || "");
+  const preferredContact = cleanValue(data.preferredContact || "");
+  const message = cleanValue(data.message || "");
+
+  if (fullName.length < 3) {
+    errors.push("fullName");
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+    errors.push("email");
+  }
+
+  if (phone.replace(/[^\d+]/g, "").length < 8) {
+    errors.push("phone");
+  }
+
+  if (!childAge) {
+    errors.push("childAge");
+  }
+
+  if (!preferredContact) {
+    errors.push("preferredContact");
+  }
+
+  if (message.length > 800) {
+    errors.push("message");
+  }
+
+  return errors;
+}
+
+function cleanValue(value) {
+  return String(value).trim().replace(/\s+/g, " ");
+}
+
+function jsonResponse(payload) {
+  return ContentService.createTextOutput(JSON.stringify(payload)).setMimeType(ContentService.MimeType.JSON);
+}
