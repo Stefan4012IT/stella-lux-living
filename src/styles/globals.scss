@@ -368,7 +368,7 @@ p {
 
   @media screen and (min-width: 768px) {
     &__subtitle {
-      font-size: 1.8rem;
+      font-size: 1.8rem !important;
     }
   }
 
@@ -1989,7 +1989,7 @@ p {
     &__subtitle {
       max-width: none;
       margin-top: auto;
-      font-size: clamp(1.12rem, 5vw, 1.34rem);
+      font-size: 1.8rem;
       line-height: 1.3;
     }
 
