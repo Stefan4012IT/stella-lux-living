@@ -7,7 +7,8 @@ export default function Hero({ content }) {
           <p className="eyebrow">{content.hero.eyebrow}</p>
           <h1>{content.hero.title}</h1>
           <p className="hero__subtitle">{content.hero.subtitle}</p>
-          <p className="hero__text">{content.hero.text}</p>
+          <p className="hero__text">{content.hero.text1}</p>
+          <p className="hero__text">{content.hero.text2}</p>
 
           <div className="hero__actions">
             <a href="#kontakt" className="button button--ink">

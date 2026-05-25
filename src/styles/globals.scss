@@ -366,6 +366,12 @@ p {
     line-height: 1.18;
   }
 
+  @media screen and (min-width: 768px) {
+    &__subtitle {
+      font-size: clamp(1.8rem, 2.4vw, 3.1rem);
+    }
+  }
+
   &__text {
     max-width: 100%;
     margin-top: 1.15rem;
