@@ -9,11 +9,10 @@ export const stellaLuxContent = {
     nav: ["Iskustvo", "Prostor", "Program", "Upis"],
     headerCta: "Zakažite termin",
     hero: {
-      eyebrow: "Lux 51, Bežanijska kosa / Premium Early Childhood Experience",
+      eyebrow: "Lux 51, Bežanijska kosa",
       title: "Detinjstvo koje sija počinje ovde.",
-      subtitle:
-        "Dobro došli u savremeni vrtić na Bežanijskoj kosi, osmišljen za igru, učenje i celovit razvoj dece od 1 do 7 godina.",
-      text: "Stella Lux spaja toplinu doma, promišljen prostor i savremen vaspitno-obrazovni pristup koji podržava autentičnost, radoznalost i samopouzdanje svakog deteta.",
+      subtitle: "Premium Early Childhood Experience",
+      text: "Dobro došli u savremeni vrtić na Bežanijskoj kosi, osmišljen za igru, učenje i celovit razvoj dece od 1 do 7 godina. Stella Lux spaja toplinu doma, promišljen prostor i savremen vaspitno-obrazovni pristup koji podržava autentičnost, radoznalost i samopouzdanje svakog deteta.",
       primaryCta: "Zakažite obilazak",
       secondaryCta: "Saznajte više o upisu",
       imageAlt: "Stella Lux logo",
@@ -262,11 +261,10 @@ export const stellaLuxContent = {
     nav: ["Experience", "Space", "Program", "Admissions"],
     headerCta: "Schedule a visit",
     hero: {
-      eyebrow: "Lux 51, Bezanijska kosa / Premium Early Childhood Experience",
+      eyebrow: "Lux 51, Bezanijska kosa",
       title: "A childhood that shines begins here.",
-      subtitle:
-        "Welcome to a modern preschool in Bezanijska kosa, designed for play, learning and the holistic development of children aged 1 to 7.",
-      text: "Stella Lux combines the warmth of home, thoughtful spaces and a modern educational approach that supports every child's authenticity, curiosity and confidence.",
+      subtitle: "Premium Early Childhood Experience",
+      text: "Welcome to a modern preschool in Bezanijska kosa, designed for play, learning and the holistic development of children aged 1 to 7. Stella Lux combines the warmth of home, thoughtful spaces and a modern educational approach that supports every child's authenticity, curiosity and confidence.",
       primaryCta: "Schedule a private tour",
       secondaryCta: "Explore admissions",
       imageAlt: "Stella Lux logo",
@@ -478,11 +476,10 @@ export const stellaLuxContent = {
     nav: ["Опыт", "Пространство", "Программа", "Прием"],
     headerCta: "Записаться",
     hero: {
-      eyebrow: "Lux 51, Bezanijska kosa / Премиальный опыт раннего развития",
+      eyebrow: "Lux 51, Bezanijska kosa",
       title: "Детство, которое сияет, начинается здесь.",
-      subtitle:
-        "Добро пожаловать в современный детский сад в Bezanijska kosa, созданный для игры, обучения и всестороннего развития детей от 1 до 7 лет.",
-      text: "Stella Lux объединяет домашнее тепло, продуманное пространство и современный образовательный подход, поддерживающий индивидуальность, любознательность и уверенность каждого ребенка.",
+      subtitle: "Premium Early Childhood Experience",
+      text: "Добро пожаловать в современный детский сад в Bezanijska kosa, созданный для игры, обучения и всестороннего развития детей от 1 до 7 лет. Stella Lux объединяет домашнее тепло, продуманное пространство и современный образовательный подход, поддерживающий индивидуальность, любознательность и уверенность каждого ребенка.",
       primaryCta: "Записаться на визит",
       secondaryCta: "Узнать о приеме",
       imageAlt: "Stella Lux logo",
