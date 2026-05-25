@@ -1,11 +1,62 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-export default function SpaceShowcase({ items }) {
+export default function SpaceShowcase({ features, items, labels }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(3);
+  const [isPaused, setIsPaused] = useState(false);
+  const trackRef = useRef(null);
+  const maxIndex = Math.max(items.length - visibleCount, 0);
+
+  const goToSlide = (index) => {
+    const nextIndex = Math.min(Math.max(index, 0), maxIndex);
+    const track = trackRef.current;
+    const slide = track?.children[nextIndex];
+
+    if (track && slide) {
+      track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: "smooth" });
+    }
+
+    setActiveIndex(nextIndex);
+  };
+
+  useEffect(() => {
+    const setSlidesPerView = () => {
+      if (window.matchMedia("(max-width: 760px)").matches) {
+        setVisibleCount(1);
+      } else if (window.matchMedia("(max-width: 1024px)").matches) {
+        setVisibleCount(2);
+      } else {
+        setVisibleCount(3);
+      }
+    };
+
+    setSlidesPerView();
+    window.addEventListener("resize", setSlidesPerView);
+
+    return () => window.removeEventListener("resize", setSlidesPerView);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex > maxIndex) {
+      goToSlide(maxIndex);
+    }
+  }, [activeIndex, maxIndex]);
+
+  useEffect(() => {
+    if (isPaused || lightboxIndex !== null) {
+      return undefined;
+    }
+
+    const interval = window.setInterval(() => {
+      goToSlide(activeIndex === maxIndex ? 0 : activeIndex + 1);
+    }, 4200);
+
+    return () => window.clearInterval(interval);
+  }, [activeIndex, isPaused, lightboxIndex, maxIndex]);
 
   useEffect(() => {
     if (lightboxIndex === null) {
@@ -29,61 +80,95 @@ export default function SpaceShowcase({ items }) {
 
   return (
     <div className="space-showcase">
-      <div className="space-showcase__tabs">
-        {items.map((item, index) => {
-          const isActive = index === activeIndex;
-
-          return (
-            <button
-              key={item.title}
-              type="button"
-              aria-pressed={isActive}
-              onMouseEnter={() => setActiveIndex(index)}
-              onFocus={() => setActiveIndex(index)}
-              onClick={() => setActiveIndex(index)}
-              className={isActive ? "is-active" : ""}
-            >
-              <span>{item.title}</span>
-              <i />
-            </button>
-          );
-        })}
+      <div className="space-showcase__features">
+        {features.map((feature) => (
+          <div key={feature} className="space-feature">
+            <span>{feature}</span>
+            <i />
+          </div>
+        ))}
       </div>
 
-      <div className="space-showcase__images">
-        {items.map((item, index) => {
-          const isActive = index === activeIndex;
+      <div
+        className="space-showcase__carousel"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        onFocusCapture={() => setIsPaused(true)}
+        onBlurCapture={() => setIsPaused(false)}
+      >
+        <div className="space-showcase__toolbar">
+          <p>{labels.carouselLabel}</p>
+          <div className="space-showcase__controls">
+            <button
+              type="button"
+              aria-label={labels.previous}
+              onClick={() => goToSlide(activeIndex === 0 ? maxIndex : activeIndex - 1)}
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              aria-label={labels.next}
+              onClick={() => goToSlide(activeIndex === maxIndex ? 0 : activeIndex + 1)}
+            >
+              ›
+            </button>
+          </div>
+        </div>
+        <div
+          ref={trackRef}
+          className="space-showcase__track"
+          onScroll={(event) => {
+            const track = event.currentTarget;
+            const slides = Array.from(track.children);
+            const closestIndex = slides.reduce((closest, slide, index) => {
+              const distance = Math.abs(slide.offsetLeft - track.offsetLeft - track.scrollLeft);
+              return distance < closest.distance ? { distance, index } : closest;
+            }, { distance: Number.POSITIVE_INFINITY, index: 0 }).index;
 
-          return (
+            setActiveIndex(Math.min(closestIndex, maxIndex));
+          }}
+        >
+          {items.map((item, index) => (
             <button
               key={item.src}
               type="button"
-              onMouseEnter={() => setActiveIndex(index)}
-              onFocus={() => setActiveIndex(index)}
               onClick={() => setLightboxIndex(index)}
-              aria-label={item.title}
-              className={isActive ? "is-active" : ""}
+              aria-label={`${labels.open}: ${item.title}`}
+              className="space-showcase__slide"
             >
               <Image
                 src={item.src}
                 alt={item.title}
                 fill
-                sizes="(min-width: 1024px) 26rem, (min-width: 768px) 33vw, 100vw"
+                sizes="(min-width: 1025px) 32vw, (min-width: 761px) 50vw, 100vw"
                 className="media-cover"
               />
             </button>
-          );
-        })}
+          ))}
+        </div>
+        <div className="space-showcase__dots" aria-label={labels.carouselLabel}>
+          {Array.from({ length: maxIndex + 1 }, (_, index) => (
+            <button
+              key={index}
+              type="button"
+              aria-label={`${labels.imageLabel} ${index + 1}`}
+              aria-pressed={index === activeIndex}
+              className={index === activeIndex ? "is-active" : ""}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
+        </div>
       </div>
 
       {lightboxIndex !== null ? (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={items[lightboxIndex].title}>
-          <button type="button" aria-label="Close gallery" onClick={() => setLightboxIndex(null)} className="lightbox__close">
-            Close
+          <button type="button" aria-label={labels.close} onClick={() => setLightboxIndex(null)} className="lightbox__close">
+            {labels.close}
           </button>
           <button
             type="button"
-            aria-label="Previous image"
+            aria-label={labels.previous}
             onClick={() => setLightboxIndex((current) => (current - 1 + items.length) % items.length)}
             className="lightbox__nav lightbox__nav--prev"
           >
@@ -97,7 +182,7 @@ export default function SpaceShowcase({ items }) {
           </figure>
           <button
             type="button"
-            aria-label="Next image"
+            aria-label={labels.next}
             onClick={() => setLightboxIndex((current) => (current + 1) % items.length)}
             className="lightbox__nav lightbox__nav--next"
           >

@@ -10,7 +10,7 @@ export default function Intro({ content }) {
           <h2>{content.intro.title}</h2>
         </div>
 
-        <div className="intro-star motion-reveal">
+        <div className="intro-star">
           <div className="hero-card">
             <Image
               src={assetPath("/images/store/classroom-group-hug.png")}
@@ -24,7 +24,10 @@ export default function Intro({ content }) {
         </div>
 
         <article className="story-card motion-reveal">
-          <p>{content.intro.text}</p>
+          <p>
+            <strong>{content.intro.lead}</strong>{" "}
+            {content.intro.text}
+          </p>
           <div className="story-card__divider" />
           <h3>{content.story.title}</h3>
           <p>{content.story.text}</p>

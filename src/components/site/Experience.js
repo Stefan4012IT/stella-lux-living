@@ -13,9 +13,10 @@ export default function Experience({ content }) {
   return (
     <section id="section-1" className="section section--white experience">
       <div className="section-shell">
-        <div className="section-heading section-heading--split">
+        <div className="section-heading experience__heading">
+          <p className="eyebrow eyebrow--muted">{content.pillarsEyebrow}</p>
           <h2>{content.pillarsTitle}</h2>
-          <p>{content.hero.text}</p>
+          <p>{content.pillarsText}</p>
         </div>
         <div className="pillar-grid">
           {content.pillars.map((pillar, index) => (

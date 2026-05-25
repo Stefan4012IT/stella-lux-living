@@ -9,10 +9,11 @@ export const stellaLuxContent = {
     nav: ["Iskustvo", "Prostor", "Program", "Upis"],
     headerCta: "Zakažite termin",
     hero: {
-      eyebrow: "Lux 51, Bežanijska kosa",
+      eyebrow: "Lux 51, Bežanijska kosa / Premium Early Childhood Experience",
       title: "Detinjstvo koje sija počinje ovde.",
-      subtitle: "Premium predškolska ustanova za najvažnije prve godine.",
-      text: "Premium vrtić Stella Lux spaja toplu brigu, promišljen prostor i bogat predškolski program za najvažnije prve godine.",
+      subtitle:
+        "Dobro došli u savremeni vrtić na Bežanijskoj kosi, osmišljen za igru, učenje i celovit razvoj dece od 1 do 7 godina.",
+      text: "Stella Lux spaja toplinu doma, promišljen prostor i savremen vaspitno-obrazovni pristup koji podržava autentičnost, radoznalost i samopouzdanje svakog deteta.",
       primaryCta: "Zakažite obilazak",
       secondaryCta: "Saznajte više o upisu",
       imageAlt: "Stella Lux logo",
@@ -26,14 +27,15 @@ export const stellaLuxContent = {
     intro: {
       eyebrow: "Premium early years",
       title: "Više od vrtića. Temelj za ceo život.",
-      text: "Prve godine oblikuju samopouzdanje, radoznalost, emocionalnu sigurnost i prve važne veštine. Zato Stella Lux gradi okruženje u kome se dete oseća viđeno, smireno i slobodno da istražuje.",
+      lead: "Prve godine grade samopouzdanje, sigurnost, radoznalost i poverenje deteta u sopstvene mogućnosti.",
+      text: "Zato Stella Lux neguje pažljivo osmišljeno okruženje u kom se svako dete oseća prihvaćeno, podržano i slobodno da kroz igru, istraživanje i stvaralaštvo otkriva svet oko sebe.",
     },
     story: {
-      title: "Stella. Lux. Dve reči, jedna filozofija.",
-      text: "Stella je zvezda, jer svako dete nosi svoj jedinstveni sjaj. Lux je svetlost i standard više: više pažnje, više kvaliteta i više promišljenosti u svakom detalju odrastanja.",
+      title: "Podrška za prve važne korake",
+      text: "Stella je zvezda, jer svako dete nosi svoj jedinstveni sjaj. Uz razumevanje razvojnih potreba deteta i podsticajno okruženje, deca grade samopouzdanje, sigurnost, empatiju, radoznalost i poverenje u sebe. Kroz svakodnevne aktivnosti uče da povezuju znanja, postavljaju pitanja, osmišljavaju rešenja i razvijaju veštine važne za život. I da svako od njih zasija svojim najjačim sjajem.",
     },
     ageGroups: {
-      eyebrow: "Uzrast i ritam",
+      eyebrow: "Za sve uzraste",
       title: "Pažnja prilagođena svakoj fazi odrastanja.",
       items: [
         {
@@ -58,38 +60,72 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsTitle: "Stella Lux iskustvo",
+    pillarsEyebrow: "Istraživači mašte",
+    pillarsTitle: "Zašto je Stella Lux jedinstven koncept za srećno odrastanje?",
+    pillarsText:
+      "U Stella Lux vrtiću deca rastu u pažljivo osmišljenom okruženju koje spaja toplinu, igru, istraživanje i savremeni vaspitno-obrazovni pristup. Svaki detalj prostora, programa i odnosa sa decom usmeren je ka sigurnosti, samopouzdanju i celovitom razvoju.",
     pillars: [
       {
-        title: "Ljubav i briga",
-        text: "Emocionalna sigurnost, blizak odnos i individualna podrška za svako dete.",
+        title: "Toplina, sigurnost i briga",
+        text: "Blizak odnos sa odraslima, emocionalna sigurnost i individualna podrška pomažu detetu da gradi samopouzdanje, osećaj pripadnosti i poverenje u sebe.",
       },
       {
-        title: "Reggio inspirisano učenje",
-        text: "Učenje kroz prostor, svetlost, umetnost, materijale, pitanja i istraživanje.",
+        title: "Dete kao jedinstvena ličnost",
+        text: "Svako dete posmatramo kroz njegove emocije, potrebe, ritam razvoja, mišljenje i autentičnost, uz poštovanje njegove individualnosti i jedinstvenog potencijala.",
       },
       {
-        title: "Učenje kroz iskustvo",
-        text: "Praktične aktivnosti i projekti kroz koje deca razumeju svet u realnim situacijama.",
+        title: "Učenje kroz igru i istraživanje",
+        text: "Kroz pitanja, materijale, stvaralaštvo i svakodnevne aktivnosti deca povezuju znanja, istražuju svet oko sebe i razvijaju radoznalost, maštu i logičko mišljenje.",
       },
       {
-        title: "Celovit razvoj",
-        text: "Engleski, kultura, umetnost, nauka, priroda i socio-emocionalni razvoj u svakodnevnom ritmu.",
+        title: "Iskustveno i praktično učenje",
+        text: "Učenje se odvija kroz realne situacije, projekte, socijalne interakcije i aktivnosti u zajednici, kako bi deca razumela svet kroz iskustvo, rad i razmišljanje.",
       },
       {
-        title: "Kultura i priroda",
-        text: "Boravak napolju, šetnje, muzeji, pozorišta, galerije i smisleni susreti sa gradom.",
+        title: "Prostor koji inspiriše razvoj",
+        text: "Na 600 m² toplog, otvorenog i promišljenog prostora, vaspitne sobe nalik domu podstiču igru, kreativnost, angažovanje i osećaj sigurnosti.",
       },
       {
-        title: "Visoki standardi od početka",
-        text: "Akreditovan program, posvećen tim i koncept pažljivo osmišljen za najvažnije godine.",
+        title: "Posvećeni vaspitači sa iskustvom",
+        text: "Stručni, motivisani i pažljivo odabrani vaspitači sa višegodišnjim iskustvom pružaju deci sigurnost, podršku i podsticaj za svakodnevni napredak.",
+      },
+      {
+        title: "Bogat program dodatnih aktivnosti",
+        text: "Pored redovnog programa, deca razvijaju svoje potencijale kroz sport, timske igre, engleski jezik, umetnost, prirodu, kreativno i logičko mišljenje.",
+      },
+      {
+        title: "Zdrava ishrana i zdravo okruženje",
+        text: "Pažljivo planirana ishrana, svakodnevne rutine, boravak napolju i negovanje zdravih navika doprinose pravilnom rastu, energiji i opštem blagostanju deteta.",
+      },
+      {
+        title: "Standard više od početka",
+        text: "Stella Lux spaja savremenu viziju obrazovanja, višedecenijsko iskustvo zaposlenih i koncept u kom se svaki detalj odrastanja promišljeno gradi, uz razvoj samostalnosti, empatije i otpornosti za svet koji se menja.",
       },
     ],
     space: {
       eyebrow: "Space as the third teacher",
-      title: "500 m² prostora osmišljenog za rast.",
-      text: "U Reggio filozofiji prostor nije samo mesto boravka. On aktivno podstiče samostalnost, maštu, kretanje i otkrivanje. Svaki deo Stella Lux ambijenta oblikovan je da deci pruži mir, inspiraciju i slobodu.",
-      stats: ["Svetle sobe", "Atelje za stvaranje", "Zone za mir i igru"],
+      title: "600 m² prostora koji podstiče igru, učenje i razvoj",
+      text: "U Stella Lux vrtiću prostor nije samo mesto boravka, već pažljivo osmišljeno okruženje koje podstiče radoznalost, samostalnost, maštu i dubinsko angažovanje deteta. Na 600 m² toplog i otvorenog ambijenta, vaspitne sobe nalik domu ispunjene su kvalitetnim materijalima, autentičnim sadržajima i elementima koji deci pružaju sigurnost, mir i slobodu da istražuju.",
+      detailTitle: "Prostor koji smiruje, inspiriše i čuva dečji ritam",
+      detailText:
+        "Enterijer PU Stella Lux osmišljen je tako da deci svakog dana pruži mir, sigurnost i osećaj topline. Vodili smo računa da prostorije imaju dovoljno prirodnog svetla, da osvetljenje bude sa niskim nivoom odsjaja UGR < 19, kako bi deca imala prijatan osećaj prirodne osvetljenosti i tokom popodnevnih časova, kada se prirodno svetlo smanjuje. Nežne, nenapadne boje, jasna organizacija prostora, akustični paneli i pažljivo biran nameštaj stvaraju okruženje sa manje buke, više reda, više fokusa i više prijatnosti. To je prostor u kom se deca lakše opuštaju, slobodnije istražuju, mirnije uče i osećaju kao kod kuće.",
+      features: [
+        "Learning rooms",
+        "Creative atelier",
+        "Calm & play zones",
+        "Reading nook",
+        "Movement space",
+        "Healthy dining area",
+        "Outdoor play yard",
+      ],
+      gallery: {
+        carouselLabel: "Prostor Stella Lux vrtića",
+        imageLabel: "Fotografija prostora",
+        open: "Otvori fotografiju",
+        close: "Zatvori",
+        previous: "Prethodna fotografija",
+        next: "Sledeća fotografija",
+      },
     },
     program: {
       title: "Najvažnije godine zaslužuju najbogatiji program.",
@@ -185,10 +221,11 @@ export const stellaLuxContent = {
     nav: ["Experience", "Space", "Program", "Admissions"],
     headerCta: "Schedule a visit",
     hero: {
-      eyebrow: "Lux 51, Bezanijska kosa",
+      eyebrow: "Lux 51, Bezanijska kosa / Premium Early Childhood Experience",
       title: "A childhood that shines begins here.",
-      subtitle: "A premium preschool for the most important early years.",
-      text: "Stella Lux brings warm care, thoughtful space and a rich preschool program together for the most important early years.",
+      subtitle:
+        "Welcome to a modern preschool in Bezanijska kosa, designed for play, learning and the holistic development of children aged 1 to 7.",
+      text: "Stella Lux combines the warmth of home, thoughtful spaces and a modern educational approach that supports every child's authenticity, curiosity and confidence.",
       primaryCta: "Schedule a private tour",
       secondaryCta: "Explore admissions",
       imageAlt: "Stella Lux logo",
@@ -197,14 +234,15 @@ export const stellaLuxContent = {
     intro: {
       eyebrow: "Premium early years",
       title: "More than childcare. A foundation for life.",
-      text: "The first years shape confidence, curiosity, emotional safety and the earliest skills for future learning. Stella Lux creates an environment where every child feels seen, calm and free to explore.",
+      lead: "The early years build a child's confidence, security, curiosity and trust in their own abilities.",
+      text: "That is why Stella Lux nurtures a thoughtfully designed environment where every child feels accepted, supported and free to discover the world through play, exploration and creativity.",
     },
     story: {
-      title: "Stella. Lux. Two words, one philosophy.",
-      text: "Stella means star, because every child carries a unique light. Lux means light and a higher standard: more care, more quality and more thought in every detail of growing up.",
+      title: "Support for the first important steps",
+      text: "Stella means star, because every child carries a unique light. With an understanding of each child's developmental needs and a stimulating environment, children build confidence, security, empathy, curiosity and trust in themselves. Through everyday activities, they learn to connect knowledge, ask questions, devise solutions and develop skills for life. So each of them can shine with their brightest light.",
     },
     ageGroups: {
-      eyebrow: "Age and rhythm",
+      eyebrow: "For all ages",
       title: "Care shaped around every stage of growing up.",
       items: [
         {
@@ -229,20 +267,72 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsTitle: "The Stella Lux experience",
+    pillarsEyebrow: "Explorers of imagination",
+    pillarsTitle: "Why is Stella Lux a unique concept for happy growing up?",
+    pillarsText:
+      "At Stella Lux, children grow in a thoughtfully designed environment that brings together warmth, play, exploration and a modern educational approach. Every detail of the space, program and relationships with children is directed toward safety, confidence and holistic development.",
     pillars: [
-      { title: "Love and care", text: "Emotional safety, close relationships and individual support for every child." },
-      { title: "Reggio-inspired learning", text: "Learning through space, light, art, materials, questions and exploration." },
-      { title: "Learning by doing", text: "Practical activities and projects that help children understand the world through real situations." },
-      { title: "Holistic development", text: "English, culture, art, science, nature and social-emotional development in the everyday rhythm." },
-      { title: "Culture and nature", text: "Outdoor time, walks, museums, theatres, galleries and meaningful encounters with the city." },
-      { title: "High standards from the start", text: "An accredited program, dedicated team and carefully designed concept for the early years." },
+      {
+        title: "Warmth, safety and care",
+        text: "Close relationships with adults, emotional safety and individual support help each child build confidence, a sense of belonging and trust in themselves.",
+      },
+      {
+        title: "Every child as a unique individual",
+        text: "We see each child through their emotions, needs, developmental pace, opinions and authenticity, respecting their individuality and unique potential.",
+      },
+      {
+        title: "Learning through play and exploration",
+        text: "Through questions, materials, creativity and daily activities, children connect knowledge, explore the world around them and develop curiosity, imagination and logical thinking.",
+      },
+      {
+        title: "Experiential and practical learning",
+        text: "Learning takes place through real situations, projects, social interactions and community activities, helping children understand the world through experience, action and reflection.",
+      },
+      {
+        title: "A space that inspires development",
+        text: "Across 600 sqm of warm, open and thoughtful space, home-like classrooms encourage play, creativity, engagement and a sense of security.",
+      },
+      {
+        title: "Dedicated, experienced educators",
+        text: "Qualified, motivated and carefully selected educators with years of experience give children safety, support and encouragement for everyday progress.",
+      },
+      {
+        title: "A rich program of additional activities",
+        text: "Alongside the regular program, children develop their potential through sport, team games, English, art, nature, creative and logical thinking.",
+      },
+      {
+        title: "Healthy nutrition and environment",
+        text: "Carefully planned nutrition, daily routines, outdoor time and healthy habits support children's proper growth, energy and overall wellbeing.",
+      },
+      {
+        title: "A standard beyond the beginning",
+        text: "Stella Lux combines a modern educational vision, decades of staff experience and a concept where every detail of growing up is carefully shaped, developing independence, empathy and resilience for a changing world.",
+      },
     ],
     space: {
       eyebrow: "Space as the third teacher",
-      title: "500 sqm designed for growth.",
-      text: "In the Reggio philosophy, space is not only where children spend time. It actively invites independence, imagination, movement and discovery. Every Stella Lux area is shaped to offer calm, inspiration and freedom.",
-      stats: ["Bright rooms", "Creative atelier", "Quiet and play zones"],
+      title: "600 sqm of space that encourages play, learning and development",
+      text: "At Stella Lux, space is not simply a place to spend time, but a thoughtfully designed environment that encourages curiosity, independence, imagination and deep engagement. Across 600 sqm of warm, open surroundings, home-like classrooms are filled with quality materials, authentic content and elements that give children safety, calm and the freedom to explore.",
+      detailTitle: "A space that calms, inspires and preserves each child's rhythm",
+      detailText:
+        "The Stella Lux preschool interior is designed to provide children with calm, security and a sense of warmth every day. We ensured that rooms receive ample natural light and that lighting has low glare, UGR < 19, helping children experience comfortable, natural-feeling illumination even in the afternoon as daylight fades. Gentle, unobtrusive colors, clear spatial organization, acoustic panels and carefully chosen furniture create an environment with less noise, more order, more focus and greater comfort. It is a place where children relax more easily, explore more freely, learn calmly and feel at home.",
+      features: [
+        "Learning rooms",
+        "Creative atelier",
+        "Calm and play zones",
+        "Reading nook",
+        "Movement space",
+        "Healthy dining area",
+        "Outdoor play yard",
+      ],
+      gallery: {
+        carouselLabel: "Inside Stella Lux",
+        imageLabel: "Space photo",
+        open: "Open photo",
+        close: "Close",
+        previous: "Previous photo",
+        next: "Next photo",
+      },
     },
     program: {
       title: "The richest program for the most important years.",
@@ -329,10 +419,11 @@ export const stellaLuxContent = {
     nav: ["Опыт", "Пространство", "Программа", "Прием"],
     headerCta: "Записаться",
     hero: {
-      eyebrow: "Lux 51, Bezanijska kosa",
+      eyebrow: "Lux 51, Bezanijska kosa / Премиальный опыт раннего развития",
       title: "Детство, которое сияет, начинается здесь.",
-      subtitle: "Премиальное дошкольное учреждение для самых важных первых лет.",
-      text: "Stella Lux объединяет теплую заботу, продуманное пространство и насыщенную дошкольную программу для самых важных первых лет.",
+      subtitle:
+        "Добро пожаловать в современный детский сад в Bezanijska kosa, созданный для игры, обучения и всестороннего развития детей от 1 до 7 лет.",
+      text: "Stella Lux объединяет домашнее тепло, продуманное пространство и современный образовательный подход, поддерживающий индивидуальность, любознательность и уверенность каждого ребенка.",
       primaryCta: "Записаться на визит",
       secondaryCta: "Узнать о приеме",
       imageAlt: "Stella Lux logo",
@@ -341,14 +432,15 @@ export const stellaLuxContent = {
     intro: {
       eyebrow: "Premium early years",
       title: "Больше, чем детский сад. Основа на всю жизнь.",
-      text: "Первые годы формируют уверенность, любознательность, эмоциональную безопасность и первые важные навыки. Stella Lux создает среду, где ребенок чувствует себя замеченным, спокойным и свободным исследовать.",
+      lead: "Первые годы формируют уверенность, чувство безопасности, любознательность и веру ребенка в собственные возможности.",
+      text: "Поэтому Stella Lux создает тщательно продуманную среду, в которой каждый ребенок чувствует себя принятым, поддержанным и свободным открывать мир через игру, исследование и творчество.",
     },
     story: {
-      title: "Stella. Lux. Два слова, одна философия.",
-      text: "Stella означает звезда, потому что каждый ребенок несет свой особенный свет. Lux означает свет и более высокий стандарт: больше заботы, качества и продуманности в каждой детали взросления.",
+      title: "Поддержка для первых важных шагов",
+      text: "Stella означает звезда, потому что каждый ребенок несет свой особенный свет. Благодаря пониманию потребностей развития ребенка и стимулирующей среде дети развивают уверенность, чувство безопасности, эмпатию, любознательность и доверие к себе. В ежедневных занятиях они учатся связывать знания, задавать вопросы, находить решения и развивать важные для жизни навыки. Чтобы каждый из них мог засиять своим самым ярким светом.",
     },
     ageGroups: {
-      eyebrow: "Возраст и ритм",
+      eyebrow: "Для всех возрастов",
       title: "Забота, адаптированная к каждому этапу развития.",
       items: [
         {
@@ -373,20 +465,72 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsTitle: "Опыт Stella Lux",
+    pillarsEyebrow: "Исследователи воображения",
+    pillarsTitle: "Почему Stella Lux - уникальная концепция счастливого взросления?",
+    pillarsText:
+      "В Stella Lux дети растут в тщательно продуманной среде, объединяющей тепло, игру, исследования и современный образовательный подход. Каждая деталь пространства, программы и отношений с детьми направлена на безопасность, уверенность в себе и всестороннее развитие.",
     pillars: [
-      { title: "Любовь и забота", text: "Эмоциональная безопасность, близкие отношения и индивидуальная поддержка каждого ребенка." },
-      { title: "Reggio-inspired обучение", text: "Обучение через пространство, свет, искусство, материалы, вопросы и исследование." },
-      { title: "Обучение через опыт", text: "Практические занятия и проекты, через которые дети понимают мир в реальных ситуациях." },
-      { title: "Целостное развитие", text: "Английский, культура, искусство, наука, природа и социально-эмоциональное развитие каждый день." },
-      { title: "Культура и природа", text: "Прогулки, время на улице, музеи, театры, галереи и meaningful встречи с городом." },
-      { title: "Высокие стандарты с начала", text: "Аккредитованная программа, внимательная команда и тщательно продуманная концепция ранних лет." },
+      {
+        title: "Тепло, безопасность и забота",
+        text: "Близкие отношения со взрослыми, эмоциональная безопасность и индивидуальная поддержка помогают ребенку развивать уверенность в себе, чувство принадлежности и доверие к себе.",
+      },
+      {
+        title: "Ребенок как уникальная личность",
+        text: "Мы воспринимаем каждого ребенка через его эмоции, потребности, темп развития, мнение и самобытность, уважая его индивидуальность и уникальный потенциал.",
+      },
+      {
+        title: "Обучение через игру и исследование",
+        text: "Через вопросы, материалы, творчество и ежедневные занятия дети связывают знания, исследуют окружающий мир и развивают любознательность, воображение и логическое мышление.",
+      },
+      {
+        title: "Практическое обучение через опыт",
+        text: "Обучение проходит через реальные ситуации, проекты, социальное взаимодействие и занятия в сообществе, чтобы дети понимали мир через опыт, деятельность и размышления.",
+      },
+      {
+        title: "Пространство, вдохновляющее развитие",
+        text: "На 600 м² теплого, открытого и продуманного пространства уютные группы, напоминающие дом, поощряют игру, творчество, вовлеченность и чувство безопасности.",
+      },
+      {
+        title: "Преданные делу опытные воспитатели",
+        text: "Квалифицированные, мотивированные и тщательно отобранные воспитатели с многолетним опытом дают детям безопасность, поддержку и стимул для ежедневного развития.",
+      },
+      {
+        title: "Богатая программа дополнительных занятий",
+        text: "Помимо основной программы, дети развивают свой потенциал через спорт, командные игры, английский язык, искусство, природу, творческое и логическое мышление.",
+      },
+      {
+        title: "Здоровое питание и здоровая среда",
+        text: "Продуманное питание, ежедневные привычки, пребывание на свежем воздухе и формирование здорового образа жизни поддерживают правильный рост, энергию и общее благополучие ребенка.",
+      },
+      {
+        title: "Стандарт, который идет дальше начала",
+        text: "Stella Lux объединяет современное видение образования, многолетний опыт сотрудников и концепцию, в которой каждая деталь взросления тщательно продумана для развития самостоятельности, эмпатии и устойчивости в меняющемся мире.",
+      },
     ],
     space: {
       eyebrow: "Space as the third teacher",
-      title: "500 м2 пространства, созданного для роста.",
-      text: "В философии Reggio пространство не просто место пребывания. Оно активно поддерживает самостоятельность, воображение, движение и открытия. Каждая зона Stella Lux создана для спокойствия, вдохновения и свободы.",
-      stats: ["Светлые комнаты", "Творческое ателье", "Зоны тишины и игры"],
+      title: "600 м² пространства, которое поддерживает игру, обучение и развитие",
+      text: "В Stella Lux пространство - не просто место пребывания, а тщательно продуманная среда, которая развивает любознательность, самостоятельность, воображение и глубокую вовлеченность ребенка. На 600 м² теплого и открытого пространства уютные группы, напоминающие дом, наполнены качественными материалами, аутентичным содержанием и элементами, которые дарят детям безопасность, спокойствие и свободу исследовать.",
+      detailTitle: "Пространство, которое успокаивает, вдохновляет и сохраняет детский ритм",
+      detailText:
+        "Интерьер PU Stella Lux создан так, чтобы каждый день дарить детям спокойствие, безопасность и ощущение тепла. Мы позаботились о достаточном естественном освещении и низком уровне бликов UGR < 19, чтобы детям было комфортно и в послеобеденное время, когда дневного света становится меньше. Мягкие ненавязчивые цвета, ясная организация пространства, акустические панели и тщательно подобранная мебель формируют среду с меньшим уровнем шума, большим порядком, сосредоточенностью и комфортом. Здесь дети легче расслабляются, свободнее исследуют, спокойнее учатся и чувствуют себя как дома.",
+      features: [
+        "Учебные комнаты",
+        "Творческое ателье",
+        "Зоны спокойствия и игры",
+        "Уголок для чтения",
+        "Пространство для движения",
+        "Зона здорового питания",
+        "Двор для игр",
+      ],
+      gallery: {
+        carouselLabel: "Пространство Stella Lux",
+        imageLabel: "Фотография пространства",
+        open: "Открыть фотографию",
+        close: "Закрыть",
+        previous: "Предыдущая фотография",
+        next: "Следующая фотография",
+      },
     },
     program: {
       title: "Самые важные годы заслуживают богатой программы.",

@@ -4,7 +4,7 @@ export default function AgeGroupsSection({ content }) {
   const ageImages = [
     "/images/age-groups/01-uzrast-1-3.png",
     "/images/age-groups/02-uzrast-3-4.png",
-    "/images/age-groups/03-uzrast-4-5.png",
+    "/images/age-groups/03-uzrast_4-5_01.png",
     "/images/age-groups/04-uzrast-5-7.png",
   ];
 
