@@ -1936,12 +1936,12 @@ p {
       linear-gradient(
         180deg,
         rgba(159, 197, 220, 0.94) 0%,
-        rgba(173, 203, 224, 0.78) 24%,
-        rgba(232, 243, 248, 0.14) 50%,
-        rgba(255, 255, 255, 0.78) 73%,
-        white 100%
+        rgba(173, 203, 224, 0.7) 24%,
+        rgba(232, 243, 248, 0.08) 52%,
+        rgba(255, 255, 255, 0.68) 76%,
+        rgba(255, 255, 255, 0.95) 100%
       ),
-      var(--hero-bg-mobile) top center / cover no-repeat;
+      var(--hero-bg-mobile) 58% top / cover no-repeat;
 
     &__wash {
       display: none;
@@ -1960,7 +1960,13 @@ p {
     }
 
     .eyebrow {
-      display: none;
+      display: inline-block;
+      max-width: 19rem;
+      margin-bottom: 0.9rem;
+      color: rgba(23, 56, 73, 0.78);
+      font-size: 0.72rem;
+      line-height: 1.35;
+      white-space: normal;
     }
 
     &__actions {
