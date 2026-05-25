@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       lang="sr"
       data-scroll-behavior="smooth"
       className={`${nunitoSans.variable} ${bricolageGrotesque.variable} scroll-smooth antialiased`}
-      style={{ "--section-0-bg": `url(${assetPath("/images/backgrounds/section-0-reggio-bg.png")})` }}
+      style={{ "--hero-bg": `url(${assetPath("/images/backgrounds/temelj_za_ceo_zivot_background.png")})` }}
     >
       <body>{children}</body>
     </html>

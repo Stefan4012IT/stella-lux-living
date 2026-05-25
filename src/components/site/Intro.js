@@ -10,14 +10,17 @@ export default function Intro({ content }) {
           <h2>{content.intro.title}</h2>
         </div>
 
-        <div className="image-panel image-panel--intro motion-reveal">
-          <Image
-            src={assetPath("/images/store/children-classroom-portrait.png")}
-            alt={content.pillarsTitle}
-            fill
-            sizes="(min-width: 1024px) 38rem, 100vw"
-            className="media-cover"
-          />
+        <div className="intro-star motion-reveal">
+          <div className="hero-card">
+            <Image
+              src={assetPath("/images/store/classroom-group-hug.png")}
+              alt={content.pillarsTitle}
+              fill
+              sizes="(min-width: 1024px) 34rem, 92vw"
+              className="media-cover"
+            />
+            <div className="hero-card__shade" />
+          </div>
         </div>
 
         <article className="story-card motion-reveal">

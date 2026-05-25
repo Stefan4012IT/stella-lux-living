@@ -34,16 +34,41 @@ export default function StellaLuxMotion({ content }) {
         );
       });
 
-      gsap.to(".floating-star", {
-        y: "58vh",
-        x: "8vw",
-        ease: "none",
-        scrollTrigger: {
-          trigger: "main",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: 1.2,
-        },
+      const motionMatch = gsap.matchMedia();
+
+      motionMatch.add("(max-width: 760px)", () => {
+        gsap.to(".floating-star", {
+          y: "58vh",
+          ease: "none",
+          scrollTrigger: {
+            trigger: "main",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1.2,
+          },
+        });
+
+        gsap.to(".floating-star", {
+          x: -14,
+          duration: 2.6,
+          ease: "sine.inOut",
+          repeat: -1,
+          yoyo: true,
+        });
+      });
+
+      motionMatch.add("(min-width: 761px)", () => {
+        gsap.to(".floating-star", {
+          y: "58vh",
+          x: "8vw",
+          ease: "none",
+          scrollTrigger: {
+            trigger: "main",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1.2,
+          },
+        });
       });
 
       gsap.to(".floating-star img", {
