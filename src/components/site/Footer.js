@@ -5,6 +5,8 @@ import { assetPath } from "@/lib/paths";
 import { stellaLuxContent } from "@/content/stellaLuxContent";
 
 export default function Footer({ locale, content }) {
+  const locationHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.contact.address)}`;
+
   return (
     <footer className="site-footer">
       <div className="section-shell site-footer__inner">
@@ -16,10 +18,15 @@ export default function Footer({ locale, content }) {
             height={36}
             className="site-footer__logo"
           />
-          <p>{content.contact.address}</p>
+          <p>
+            <a href={locationHref} target="_blank" rel="noreferrer">
+              {content.contact.address}
+            </a>
+          </p>
         </div>
         <div className="site-footer__links">
-          <a href={`tel:${content.contact.phone.replaceAll(" ", "")}`}>{content.contact.phone}</a>
+          <a href={`tel:${content.contact.phoneHref}`}>{content.contact.phone}</a>
+          <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
           <a href={`https://${content.contact.website}`}>{content.contact.website}</a>
           {locales.map((item) => (
             <Link key={item} href={`/${item}`} className={item === locale ? "is-active" : ""}>

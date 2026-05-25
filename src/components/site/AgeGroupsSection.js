@@ -2,9 +2,10 @@ import { assetPath } from "@/lib/paths";
 
 export default function AgeGroupsSection({ content }) {
   const ageImages = [
-    "/images/age-groups/01-najmladji-istrazivaci.png",
-    "/images/age-groups/02-radoznali-malisani.png",
-    "/images/age-groups/03-predskolci-spremni-za-svet.png",
+    "/images/age-groups/01-uzrast-1-3.png",
+    "/images/age-groups/02-uzrast-3-4.png",
+    "/images/age-groups/03-uzrast-4-5.png",
+    "/images/age-groups/04-uzrast-5-7.png",
   ];
 
   return (
@@ -24,7 +25,7 @@ export default function AgeGroupsSection({ content }) {
             >
               <div className="age-card__content">
                 <span>{item.age}</span>
-                <h3>{item.title}</h3>
+                <h4>{item.title}</h4>
                 <p>{item.text}</p>
               </div>
             </article>

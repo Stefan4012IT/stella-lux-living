@@ -41,6 +41,7 @@ function getValidation(form, labels) {
 export default function ContactSection({ locale, content }) {
   const labels = content.contactForm;
   const endpoint = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEB_APP_URL;
+  const locationHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.contact.address)}`;
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
@@ -121,6 +122,13 @@ export default function ContactSection({ locale, content }) {
           <p className="eyebrow eyebrow--muted">{labels.eyebrow}</p>
           <h2>{labels.title}</h2>
           <p>{labels.text}</p>
+          <div className="contact-card__details">
+            <a href={`tel:${content.contact.phoneHref}`}>{content.contact.phone}</a>
+            <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
+            <a href={locationHref} target="_blank" rel="noreferrer">
+              {content.contact.address}
+            </a>
+          </div>
         </div>
 
         <form className="contact-form" onSubmit={submitForm} noValidate>

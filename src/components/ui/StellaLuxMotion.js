@@ -106,7 +106,7 @@ export default function StellaLuxMotion({ content }) {
     return () => ctx.revert();
   }, []);
 
-  const phoneHref = `tel:${content.contact.phone.replaceAll(" ", "")}`;
+  const phoneHref = `tel:${content.contact.phoneHref}`;
 
   return (
     <div className="motion-layer">

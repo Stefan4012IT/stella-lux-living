@@ -29,8 +29,8 @@ export default function Header({ locale, content }) {
 
         <div className="site-header__actions">
           <LanguageSwitcher locale={locale} />
-          <a href={`tel:${content.contact.phone.replaceAll(" ", "")}`} className="button button--light button--small">
-            {content.finalCta.secondary}
+          <a href="#kontakt" className="button button--light button--small">
+            {content.headerCta}
           </a>
         </div>
       </div>

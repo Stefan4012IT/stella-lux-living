@@ -7,6 +7,7 @@ export const stellaLuxContent = {
         "Stella Lux je premium predškolska ustanova u kompleksu Lux 51, sa više od 500 m² prostora, Reggio inspirisanim pristupom i pravom na gradsku subvenciju.",
     },
     nav: ["Iskustvo", "Prostor", "Program", "Upis"],
+    headerCta: "Zakažite termin",
     hero: {
       eyebrow: "Lux 51, Bežanijska kosa",
       title: "Detinjstvo koje sija počinje ovde.",
@@ -36,17 +37,22 @@ export const stellaLuxContent = {
       title: "Pažnja prilagođena svakoj fazi odrastanja.",
       items: [
         {
-          age: "1-2 godine",
+          age: "1-3 godine",
           title: "Najmlađi istraživači",
           text: "Topao, miran ritam za prve korake u kolektivu: blizak odnos, senzorna igra i puno sigurnosti.",
         },
         {
-          age: "2-3 godine",
+          age: "3-4 godine",
           title: "Radoznali mališani",
           text: "Svakodnevne aktivnosti koje podržavaju govor, samostalnost, pokret i prve prijateljske odnose.",
         },
         {
-          age: "3-6 godina",
+          age: "4-5 godina",
+          title: "Kreativni istraživači",
+          text: "Mašta, umetnost, pitanja i mali projekti kroz koje deca otkrivaju svoje ideje i interesovanja.",
+        },
+        {
+          age: "5-7 godina",
           title: "Predškolci spremni za svet",
           text: "Bogato učenje kroz projekte, umetnost, engleski, kulturu i praktična iskustva koja grade samopouzdanje.",
         },
@@ -162,9 +168,11 @@ export const stellaLuxContent = {
       },
     },
     contact: {
-      phone: "+381 66 666 666",
+      phone: "+(381) 66 33 22 53",
+      phoneHref: "+38166332253",
+      email: "info@stellalux.rs",
       website: "stellalux.rs",
-      address: "Lux 51, Bežanijska kosa",
+      address: "Partizanske Avijacije 6ž, Bežanijska Kosa",
     },
   },
   en: {
@@ -175,6 +183,7 @@ export const stellaLuxContent = {
         "Stella Lux is a premium preschool in Lux 51 with more than 500 sqm of designed space, a Reggio-inspired approach and accredited early years care.",
     },
     nav: ["Experience", "Space", "Program", "Admissions"],
+    headerCta: "Schedule a visit",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",
       title: "A childhood that shines begins here.",
@@ -199,17 +208,22 @@ export const stellaLuxContent = {
       title: "Care shaped around every stage of growing up.",
       items: [
         {
-          age: "1-2 years",
+          age: "1-3 years",
           title: "Young explorers",
           text: "A warm, calm rhythm for the first steps into group life: close care, sensory play and emotional safety.",
         },
         {
-          age: "2-3 years",
+          age: "3-4 years",
           title: "Curious toddlers",
           text: "Daily experiences that support language, independence, movement and the first meaningful friendships.",
         },
         {
-          age: "3-6 years",
+          age: "4-5 years",
+          title: "Creative explorers",
+          text: "Imagination, art, questions and small projects through which children discover their ideas and interests.",
+        },
+        {
+          age: "5-7 years",
           title: "Preschoolers ready for the world",
           text: "Rich project-based learning through art, English, culture and practical experiences that build confidence.",
         },
@@ -298,9 +312,11 @@ export const stellaLuxContent = {
       },
     },
     contact: {
-      phone: "+381 66 666 666",
+      phone: "+(381) 66 33 22 53",
+      phoneHref: "+38166332253",
+      email: "info@stellalux.rs",
       website: "stellalux.rs",
-      address: "Lux 51, Bezanijska kosa",
+      address: "Partizanske Avijacije 6ž, Bežanijska Kosa",
     },
   },
   ru: {
@@ -311,6 +327,7 @@ export const stellaLuxContent = {
         "Stella Lux - premium дошкольное учреждение в комплексе Lux 51: более 500 м2 пространства, Reggio-inspired подход и аккредитованная программа.",
     },
     nav: ["Опыт", "Пространство", "Программа", "Прием"],
+    headerCta: "Записаться",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",
       title: "Детство, которое сияет, начинается здесь.",
@@ -335,17 +352,22 @@ export const stellaLuxContent = {
       title: "Забота, адаптированная к каждому этапу развития.",
       items: [
         {
-          age: "1-2 года",
+          age: "1-3 года",
           title: "Самые маленькие исследователи",
           text: "Теплый и спокойный ритм для первых шагов в группе: близкая забота, сенсорная игра и чувство безопасности.",
         },
         {
-          age: "2-3 года",
+          age: "3-4 года",
           title: "Любознательные малыши",
           text: "Ежедневные занятия, поддерживающие речь, самостоятельность, движение и первые дружеские отношения.",
         },
         {
-          age: "3-6 лет",
+          age: "4-5 лет",
+          title: "Творческие исследователи",
+          text: "Воображение, искусство, вопросы и маленькие проекты, в которых дети раскрывают свои идеи и интересы.",
+        },
+        {
+          age: "5-7 лет",
           title: "Дошкольники, готовые к миру",
           text: "Насыщенное проектное обучение через искусство, английский, культуру и практический опыт.",
         },
@@ -434,9 +456,11 @@ export const stellaLuxContent = {
       },
     },
     contact: {
-      phone: "+381 66 666 666",
+      phone: "+(381) 66 33 22 53",
+      phoneHref: "+38166332253",
+      email: "info@stellalux.rs",
       website: "stellalux.rs",
-      address: "Lux 51, Bezanijska kosa",
+      address: "Partizanske Avijacije 6ž, Bežanijska Kosa",
     },
   },
 };
