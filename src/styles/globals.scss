@@ -925,6 +925,11 @@ p {
   gap: 2rem;
 }
 
+.admission__stack {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
 .section.program {
   padding: 0;
   background: var(--sky);
@@ -958,6 +963,15 @@ p {
     color: white;
     font-size: clamp(2.45rem, 4vw, 4.55rem);
     white-space: normal;
+    text-align: center;
+  }
+
+  > p {
+    max-width: 58rem;
+    margin: -0.25rem auto 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.75;
     text-align: center;
   }
 }
@@ -1045,7 +1059,7 @@ p {
   position: relative;
   display: block;
   width: 100vw;
-  min-height: 20rem;
+  min-height: 21.5rem;
   margin-left: calc(50% - 50vw);
   gap: 0;
 
@@ -1083,60 +1097,80 @@ p {
   justify-content: center;
   gap: 0.25rem;
   padding: 0;
+  border: 0;
   background: transparent;
   box-shadow: none;
   color: white;
+  cursor: pointer;
   font-size: clamp(0.94rem, 1.05vw, 1.04rem);
   font-weight: 850;
   line-height: 1.25;
   text-align: center;
+  transition: color 180ms ease, transform 180ms ease;
 
   &:nth-child(1) {
-    left: 7%;
-    top: 11.8rem;
+    left: 6%;
+    top: 12.3rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(2) {
-    left: 19.3%;
-    top: 7.2rem;
+    left: 17%;
+    top: 8rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(3) {
-    left: 31.55%;
-    top: 3.8rem;
+    left: 28%;
+    top: 4.8rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(4) {
-    left: 43.85%;
-    top: 2.1rem;
+    left: 39%;
+    top: 2.7rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(5) {
-    left: 56.15%;
-    top: 2.1rem;
+    left: 50%;
+    top: 2rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(6) {
-    left: 68.45%;
-    top: 3.8rem;
+    left: 61%;
+    top: 2.7rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(7) {
-    left: 80.7%;
-    top: 7.2rem;
+    left: 72%;
+    top: 4.8rem;
     transform: translateX(-50%);
   }
 
   &:nth-child(8) {
-    left: 93%;
-    top: 11.8rem;
+    left: 83%;
+    top: 8rem;
     transform: translateX(-50%);
+  }
+
+  &:nth-child(9) {
+    left: 94%;
+    top: 12.3rem;
+    transform: translateX(-50%);
+  }
+
+  &:hover,
+  &:focus-visible,
+  &.is-active {
+    color: var(--ink);
+
+    .icon-badge {
+      filter: drop-shadow(0 20px 28px rgba(35, 73, 92, 0.2));
+      transform: translateY(-0.25rem) scale(1.04);
+    }
   }
 
   .icon-badge {
@@ -1149,6 +1183,7 @@ p {
     filter: drop-shadow(0 16px 24px rgba(35, 73, 92, 0.12));
     mask: var(--stella-star-shape) center / contain no-repeat;
     -webkit-mask: var(--stella-star-shape) center / contain no-repeat;
+    transition: filter 180ms ease, transform 180ms ease;
 
     svg {
       width: 44%;
@@ -1157,11 +1192,54 @@ p {
     }
   }
 
-  span:not(.icon-badge) {
+  &__copy {
     display: block;
     max-width: 10rem;
     margin-top: -0.2rem;
     text-shadow: 0 2px 14px rgba(23, 56, 73, 0.18);
+  }
+
+  &__copy p {
+    display: none;
+  }
+}
+
+.program-detail {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  width: min(100%, 52rem);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 1.5rem;
+  padding: clamp(1.15rem, 2vw, 1.45rem);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 48px rgba(35, 73, 92, 0.12);
+
+  .icon-badge {
+    width: 4.6rem;
+    height: 4.6rem;
+    background: var(--cream);
+  }
+
+  span {
+    color: #9d8140;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    margin-top: 0.15rem;
+    color: var(--ink);
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.08;
+  }
+
+  p {
+    margin-top: 0.45rem;
+    color: var(--muted);
+    line-height: 1.65;
   }
 }
 
@@ -1196,25 +1274,62 @@ p {
   border-radius: var(--radius-lg);
   padding: clamp(2rem, 4vw, 2.6rem);
   background: var(--sky);
+  text-align: center;
 
   h2 {
+    max-width: 54rem;
+    margin-inline: auto;
     color: white;
+  }
+
+  &__intro p {
+    max-width: 58rem;
+    margin: 1rem auto 0;
+    color: var(--ink-2);
+    font-size: clamp(1rem, 1.35vw, 1.16rem);
+    line-height: 1.75;
   }
 }
 
 .meal-grid {
   margin-top: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .meal-card {
+  display: grid;
   min-height: 7rem;
+  justify-items: center;
+  gap: 0.85rem;
   background: rgba(255, 255, 255, 0.78);
+  text-align: center;
+
+  div {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 650;
+    line-height: 1.45;
+  }
 }
 
 .admission-card {
   border-radius: var(--radius-lg);
   padding: clamp(2rem, 4vw, 2.6rem);
-  background: var(--cream);
+  background:
+    radial-gradient(circle at 92% 15%, rgba(240, 198, 111, 0.2), transparent 14rem),
+    var(--cream);
+
+  > p {
+    max-width: 44rem;
+    margin-top: 0.9rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
 }
 
 .admission-steps {
@@ -1242,7 +1357,7 @@ p {
 
 .testimonials {
   width: min(var(--container), calc(100vw - 2.5rem));
-  margin: 2rem auto 0;
+  margin: 0 auto;
   border-radius: var(--radius-lg);
   padding: clamp(2rem, 4vw, 2.6rem);
   background: var(--ink-2);
@@ -1747,6 +1862,10 @@ p {
     padding: clamp(1.25rem, 3vw, 1.75rem);
   }
 
+  .program-detail {
+    margin-top: 1.35rem;
+  }
+
   .program-item {
     position: relative;
     inset: auto !important;
@@ -1790,6 +1909,10 @@ p {
       width: 6rem;
       height: 6rem;
     }
+  }
+
+  .meal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1938,19 +2061,55 @@ p {
     padding: clamp(1.5rem, 6vw, 2rem);
   }
 
+  .program-detail {
+    grid-template-columns: 1fr;
+    display: none;
+    text-align: center;
+
+    .icon-badge {
+      justify-self: center;
+    }
+  }
+
   .program-item {
     min-height: 0;
+    align-items: center;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    border-radius: 1.25rem;
+    padding: 0.9rem 1rem;
+    background: rgba(255, 255, 255, 0.16);
     text-align: left;
 
     .icon-badge {
-      width: 5rem;
-      height: 5rem;
+      flex: 0 0 auto;
+      width: 4.85rem;
+      height: 4.85rem;
     }
 
-    span:not(.icon-badge) {
+    &__copy {
       max-width: none;
+      margin-top: 0;
+      text-shadow: none;
+
+      > span {
+        display: block;
+        color: white;
+        font-size: 1.02rem;
+        line-height: 1.2;
+      }
+    }
+
+    p {
+      display: block;
+      margin-top: 0.45rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      font-weight: 650;
+      line-height: 1.55;
+      text-shadow: none;
     }
   }
 

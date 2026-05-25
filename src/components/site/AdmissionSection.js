@@ -4,21 +4,30 @@ import { MealIcon } from "./ProgramIcons";
 export default function AdmissionSection({ content }) {
   return (
     <section id="upis" className="section section--white admission">
-      <div className="section-shell admission__grid">
+      <div className="section-shell admission__stack">
         <div className="nutrition-card motion-reveal">
-          <h2>{content.nutrition.title}</h2>
+          <div className="nutrition-card__intro">
+            <h2>{content.nutrition.title}</h2>
+            {content.nutrition.text ? <p>{content.nutrition.text}</p> : null}
+          </div>
           <div className="meal-grid">
             {content.nutrition.meals.map((meal, index) => (
-              <div key={meal} className="meal-card">
+              <div key={meal.title ?? meal} className="meal-card">
                 <MealIcon index={index} />
-                <span>{meal}</span>
+                <div>
+                  <span>{meal.title ?? meal}</span>
+                  {meal.text ? <p>{meal.text}</p> : null}
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="admission-card motion-reveal">
+        <TestimonialsCarousel testimonials={content.testimonials} />
+
+        <div id="admission-card" className="admission-card motion-reveal">
           <h2>{content.admission.title}</h2>
+          {content.admission.text ? <p>{content.admission.text}</p> : null}
           <div className="admission-steps">
             {content.admission.steps.map((step, index) => (
               <div key={step} className="admission-step">
@@ -29,7 +38,6 @@ export default function AdmissionSection({ content }) {
           </div>
         </div>
       </div>
-      <TestimonialsCarousel testimonials={content.testimonials} />
     </section>
   );
 }

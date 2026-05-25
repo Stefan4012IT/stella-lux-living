@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function SpaceShowcase({ features, items, labels }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,7 +11,7 @@ export default function SpaceShowcase({ features, items, labels }) {
   const trackRef = useRef(null);
   const maxIndex = Math.max(items.length - visibleCount, 0);
 
-  const goToSlide = (index) => {
+  const goToSlide = useCallback((index) => {
     const nextIndex = Math.min(Math.max(index, 0), maxIndex);
     const track = trackRef.current;
     const slide = track?.children[nextIndex];
@@ -21,30 +21,27 @@ export default function SpaceShowcase({ features, items, labels }) {
     }
 
     setActiveIndex(nextIndex);
-  };
+  }, [maxIndex]);
 
   useEffect(() => {
     const setSlidesPerView = () => {
+      let nextVisibleCount = 3;
+
       if (window.matchMedia("(max-width: 760px)").matches) {
-        setVisibleCount(1);
+        nextVisibleCount = 1;
       } else if (window.matchMedia("(max-width: 1024px)").matches) {
-        setVisibleCount(2);
-      } else {
-        setVisibleCount(3);
+        nextVisibleCount = 2;
       }
+
+      setVisibleCount(nextVisibleCount);
+      setActiveIndex((current) => Math.min(current, Math.max(items.length - nextVisibleCount, 0)));
     };
 
     setSlidesPerView();
     window.addEventListener("resize", setSlidesPerView);
 
     return () => window.removeEventListener("resize", setSlidesPerView);
-  }, []);
-
-  useEffect(() => {
-    if (activeIndex > maxIndex) {
-      goToSlide(maxIndex);
-    }
-  }, [activeIndex, maxIndex]);
+  }, [items.length]);
 
   useEffect(() => {
     if (isPaused || lightboxIndex !== null) {
@@ -56,7 +53,7 @@ export default function SpaceShowcase({ features, items, labels }) {
     }, 4200);
 
     return () => window.clearInterval(interval);
-  }, [activeIndex, isPaused, lightboxIndex, maxIndex]);
+  }, [activeIndex, goToSlide, isPaused, lightboxIndex, maxIndex]);
 
   useEffect(() => {
     if (lightboxIndex === null) {

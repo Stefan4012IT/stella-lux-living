@@ -4,7 +4,7 @@ import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
-  const navLinks = ["#section-1", "#section-2", "#section-3", "#upis"];
+  const navLinks = ["#section-1", "#section-2", "#section-3", "#admission-card"];
 
   return (
     <header className="site-header">

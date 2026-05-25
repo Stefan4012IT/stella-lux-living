@@ -5,7 +5,7 @@ export default function FinalCta({ content }) {
         <div className="final-cta__panel motion-reveal">
           <h2>{content.finalCta.title}</h2>
           <div className="final-cta__actions">
-            <a href={`tel:${content.contact.phoneHref}`} className="button button--light">
+            <a href="#kontakt" className="button button--light">
               {content.finalCta.primary}
             </a>
             <a href={`tel:${content.contact.phoneHref}`} className="button button--outline">

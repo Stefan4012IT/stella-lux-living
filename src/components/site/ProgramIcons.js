@@ -58,6 +58,13 @@ export function ProgramIcon({ index }) {
       <circle cx="48" cy="33" r="3" fill="#23495c" />
       <path d="M40 66S27 58 22 47c12 3 24 3 36 0-5 11-18 19-18 19Z" fill="#adcbe0" opacity=".45" />
     </svg>,
+    <svg key="sport" viewBox="0 0 80 80" fill="none">
+      <circle cx="40" cy="40" r="25" fill="#fff7df" />
+      <path d="M40 15c7 5 11 13 11 25S47 60 40 65c-7-5-11-13-11-25s4-20 11-25Z" fill="#adcbe0" />
+      <path d="M18 35c7-4 14-6 22-6s15 2 22 6M18 45c7 4 14 6 22 6s15-2 22-6" stroke="#23495c" strokeWidth="4" strokeLinecap="round" />
+      <path d="M40 16v48" stroke="#df5565" strokeWidth="4" strokeLinecap="round" />
+      <path d="M24 24c11 7 21 7 32 0M24 56c11-7 21-7 32 0" stroke="#f0c66f" strokeWidth="4" strokeLinecap="round" />
+    </svg>,
   ];
 
   return <span className="icon-badge">{icons[index % icons.length]}</span>;

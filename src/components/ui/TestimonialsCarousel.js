@@ -27,7 +27,7 @@ export default function TestimonialsCarousel({ testimonials }) {
       <div className="testimonials__dots" aria-label="Testimonials">
         {testimonials.map((testimonial, index) => (
           <button
-            key={`${testimonial.author}-dot`}
+            key={`${testimonial.author}-${index}-dot`}
             type="button"
             aria-label={`Show testimonial ${index + 1}`}
             aria-pressed={index === activeIndex}

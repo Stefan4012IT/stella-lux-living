@@ -128,16 +128,45 @@ export const stellaLuxContent = {
       },
     },
     program: {
-      title: "Najvažnije godine zaslužuju najbogatiji program.",
+      title: "Bogat program radionica i dodatnih aktivnosti",
+      text: "U Stella Lux vrtiću deca kroz pažljivo osmišljene radionice i dodatne aktivnosti svakodnevno razvijaju radoznalost, kreativnost, samostalnost i važne životne veštine. Program je oblikovan tako da podrži celovit razvoj deteta kroz igru, iskustvo, istraživanje i stvaranje.",
       items: [
-        "Engleski jezik",
-        "Nauka i istraživanje",
-        "Umetničke radionice",
-        "Učenje napolju",
-        "Kulturne posete",
-        "Praktične životne aktivnosti",
-        "Projektno učenje",
-        "Emocionalni i socijalni razvoj",
+        {
+          title: "Engleski jezik",
+          text: "Upoznavanje jezika kroz igru, pesme, priče, pokret i svakodnevnu komunikaciju.",
+        },
+        {
+          title: "Nauka i istraživanje",
+          text: "Aktivnosti koje podstiču decu da postavljaju pitanja, posmatraju, zaključuju i otkrivaju svet oko sebe.",
+        },
+        {
+          title: "Art centar",
+          text: "Slikanje, crtanje, oblikovanje, muzika i kreativno izražavanje kroz različite materijale i tehnike.",
+        },
+        {
+          title: "Učenje napolju",
+          text: "Boravak u dvorištu, prirodi i otvorenom prostoru, kroz igru, kretanje i istraživanje okruženja.",
+        },
+        {
+          title: "Kulturne posete",
+          text: "Posete pozorištima, muzejima, galerijama i drugim mestima koja deci približavaju kulturu i svet oko njih.",
+        },
+        {
+          title: "Praktične životne veštine",
+          text: "Aktivnosti kroz koje deca razvijaju samostalnost, odgovornost, fine motorne veštine i svakodnevne navike.",
+        },
+        {
+          title: "Projektno učenje",
+          text: "Tematski projekti kroz koje deca istražuju, sarađuju, povezuju znanja i dolaze do sopstvenih zaključaka.",
+        },
+        {
+          title: "Emocionalni i socijalni razvoj",
+          text: "Podrška u prepoznavanju emocija, razvoju empatije, komunikacije, samopouzdanja i odnosa sa drugima.",
+        },
+        {
+          title: "Školica sporta Happy Kids",
+          text: "Program fizičkih aktivnosti kroz koji deca razvijaju motoriku, koordinaciju, timski duh, samopouzdanje i zdrave navike.",
+        },
       ],
     },
     subsidy: {
@@ -146,32 +175,44 @@ export const stellaLuxContent = {
     },
     nutrition: {
       title: "Pažljivo osmišljena ishrana za svaki mali dan.",
-      meals: ["Doručak", "Sveža voćna pauza", "Izbalansiran ručak", "Popodnevna užina"],
+      text: "Izbalansirani obroci, bogati važnim nutrijentima, pažljivo su planirani da podrže rast, energiju, koncentraciju i dobro raspoloženje dece tokom dana. Kad god je moguće, prednost dajemo svežim, kvalitetnim i organskim namirnicama.",
+      meals: [
+        { title: "Doručak", text: "Hranljiv početak dana uz izbalansirane sastojke." },
+        { title: "Sveža voćna pauza", text: "Prirodni vitamini i energija za nastavak aktivnosti." },
+        { title: "Nutritivno izbalansiran ručak", text: "Pažljivo pripremljen obrok koji podržava rast i razvoj." },
+        { title: "Popodnevna užina", text: "Lagana, kvalitetna i ukusna užina za kraj vrtićkog dana." },
+      ],
     },
     admission: {
       title: "Vaš prvi korak ka Stella Lux iskustvu.",
+      text: "Upis započinje jednostavno i smireno: pošaljite upit, upoznajte prostor i tim, a zatim zajedno definišemo najbolji ritam adaptacije za vaše dete.",
       steps: ["Pošaljite upit", "Zakažite obilazak vrtića", "Rezervišite mesto", "Započnite gentle adaptation proces"],
     },
     testimonials: [
       {
         quote:
-          "Tražili smo vrtić koji ima toplinu doma, ali i ozbiljan pedagoški standard. Stella Lux je baš taj balans.",
-        author: "Roditelji iz Bežanijske kose",
+          "Stella Lux nas je osvojio toplim prostorom i stručnim timom. Kada smo upoznali vaspitačicu, znali smo da će naše dete biti u sigurnim rukama.",
+        author: "Porodica budućeg polaznika",
       },
       {
         quote:
-          "Naše dete je vrlo brzo počelo da priča o aktivnostima, drugarima i prostoru. Oseća se da je svaki detalj promišljen.",
-        author: "Porodica iz Novog Beograda",
+          "Dopao nam se mir, pažnja u svakom detalju i pristup deci. Tim deluje veoma stručno i posvećeno, zato jedva čekamo da krenemo.",
+        author: "Roditelji sa Novog Beograda",
       },
       {
         quote:
-          "Najviše nam znači miran pristup adaptaciji. Tim je strpljiv, topao i vrlo jasan u komunikaciji sa roditeljima.",
-        author: "Mama devojčice od 4 godine",
+          "Izabrali smo Stella Lux jer nije samo lep prostor, već mesto u kom se vidi iskustvo, toplina i ozbiljan rad sa decom.",
+        author: "Roditelji sa Bežanijske kose",
       },
       {
         quote:
-          "Prostor je svetao, čist i drugačiji od svega što smo obišli. Deca imaju mesto za igru, ali i za mir i fokus.",
-        author: "Roditelji budućeg predškolca",
+          "Već pri prvoj poseti osetili smo poverenje. Vaspitačica i tim su nas osvojili stručnošću, smirenošću i pristupom.",
+        author: "Mama budućeg polaznika",
+      },
+      {
+        quote:
+          "Najviše nam se dopalo što se svakom detetu pristupa pažljivo i individualno. Radujemo se početku.",
+        author: "Porodica budućeg polaznika",
       },
     ],
     finalCta: {
@@ -335,8 +376,19 @@ export const stellaLuxContent = {
       },
     },
     program: {
-      title: "The richest program for the most important years.",
-      items: ["English language", "Science and research", "Art workshops", "Outdoor learning", "Cultural visits", "Practical life activities", "Project-based learning", "Emotional and social development"],
+      title: "A rich program of workshops and additional activities",
+      text: "At Stella Lux, thoughtfully designed workshops and activities help children develop curiosity, creativity, independence and important life skills every day through play, experience, exploration and creation.",
+      items: [
+        { title: "English language", text: "Language introduction through play, songs, stories, movement and everyday communication." },
+        { title: "Science and research", text: "Activities that encourage children to ask questions, observe, reason and discover the world around them." },
+        { title: "Art center", text: "Painting, drawing, shaping, music and creative expression through different materials and techniques." },
+        { title: "Outdoor learning", text: "Time in the yard, nature and open spaces through play, movement and exploration." },
+        { title: "Cultural visits", text: "Visits to theatres, museums, galleries and other places that bring culture and the wider world closer to children." },
+        { title: "Practical life skills", text: "Activities that develop independence, responsibility, fine motor skills and everyday habits." },
+        { title: "Project-based learning", text: "Thematic projects where children explore, collaborate, connect knowledge and reach their own conclusions." },
+        { title: "Emotional and social development", text: "Support in recognizing emotions, developing empathy, communication, confidence and relationships with others." },
+        { title: "Happy Kids sports school", text: "A physical activity program that develops motor skills, coordination, team spirit, confidence and healthy habits." },
+      ],
     },
     subsidy: {
       title: "Premium standards with access to city subsidy.",
@@ -344,10 +396,17 @@ export const stellaLuxContent = {
     },
     nutrition: {
       title: "Thoughtful nutrition for every little day.",
-      meals: ["Breakfast", "Fresh fruit break", "Balanced lunch", "Afternoon snack"],
+      text: "Balanced meals rich in important nutrients are carefully planned to support children's growth, energy, focus and wellbeing throughout the day. Whenever possible, we give priority to fresh, high-quality and organic ingredients.",
+      meals: [
+        { title: "Breakfast", text: "A nourishing start to the day with balanced ingredients." },
+        { title: "Fresh fruit break", text: "Natural vitamins and energy for the next activities." },
+        { title: "Nutritionally balanced lunch", text: "A carefully prepared meal that supports growth and development." },
+        { title: "Afternoon snack", text: "A light, quality and tasty snack for the end of the preschool day." },
+      ],
     },
     admission: {
       title: "Your first step into the Stella Lux experience.",
+      text: "Admissions begin calmly and simply: send an inquiry, visit the space and meet the team, then we define the best adaptation rhythm for your child together.",
       steps: ["Send an inquiry", "Schedule a private tour", "Reserve a place", "Begin a gentle adaptation process"],
     },
     testimonials: [
@@ -533,8 +592,19 @@ export const stellaLuxContent = {
       },
     },
     program: {
-      title: "Самые важные годы заслуживают богатой программы.",
-      items: ["Английский язык", "Наука и исследования", "Творческие мастерские", "Обучение на улице", "Культурные визиты", "Практические жизненные навыки", "Проектное обучение", "Эмоциональное и социальное развитие"],
+      title: "Богатая программа мастерских и дополнительных занятий",
+      text: "В Stella Lux дети каждый день развивают любознательность, творчество, самостоятельность и важные жизненные навыки через продуманные занятия, игру, опыт, исследование и созидание.",
+      items: [
+        { title: "Английский язык", text: "Знакомство с языком через игру, песни, истории, движение и ежедневное общение." },
+        { title: "Наука и исследования", text: "Занятия, которые побуждают детей задавать вопросы, наблюдать, делать выводы и открывать мир вокруг себя." },
+        { title: "Арт-центр", text: "Живопись, рисунок, лепка, музыка и творческое выражение через разные материалы и техники." },
+        { title: "Обучение на улице", text: "Время во дворе, на природе и открытом пространстве через игру, движение и исследование окружения." },
+        { title: "Культурные визиты", text: "Посещения театров, музеев, галерей и других мест, которые знакомят детей с культурой и миром вокруг." },
+        { title: "Практические жизненные навыки", text: "Занятия, развивающие самостоятельность, ответственность, мелкую моторику и ежедневные привычки." },
+        { title: "Проектное обучение", text: "Тематические проекты, в которых дети исследуют, сотрудничают, связывают знания и приходят к собственным выводам." },
+        { title: "Эмоциональное и социальное развитие", text: "Поддержка в распознавании эмоций, развитии эмпатии, общения, уверенности и отношений с другими." },
+        { title: "Спортивная школа Happy Kids", text: "Программа физической активности, развивающая моторику, координацию, командный дух, уверенность и здоровые привычки." },
+      ],
     },
     subsidy: {
       title: "Premium стандарт с правом на городскую субсидию.",
@@ -542,10 +612,17 @@ export const stellaLuxContent = {
     },
     nutrition: {
       title: "Продуманное питание на каждый маленький день.",
-      meals: ["Завтрак", "Свежая фруктовая пауза", "Сбалансированный обед", "Полдник"],
+      text: "Сбалансированные блюда, богатые важными нутриентами, тщательно планируются, чтобы поддерживать рост, энергию, концентрацию и хорошее настроение детей в течение дня. По возможности мы отдаем предпочтение свежим, качественным и органическим продуктам.",
+      meals: [
+        { title: "Завтрак", text: "Питательное начало дня со сбалансированными ингредиентами." },
+        { title: "Свежая фруктовая пауза", text: "Натуральные витамины и энергия для продолжения активностей." },
+        { title: "Сбалансированный обед", text: "Тщательно приготовленный прием пищи, поддерживающий рост и развитие." },
+        { title: "Полдник", text: "Легкий, качественный и вкусный перекус в конце дня в детском саду." },
+      ],
     },
     admission: {
       title: "Ваш первый шаг к Stella Lux опыту.",
+      text: "Поступление начинается спокойно и просто: отправьте запрос, познакомьтесь с пространством и командой, а затем вместе определим лучший ритм адаптации для вашего ребенка.",
       steps: ["Отправьте запрос", "Запишитесь на визит", "Зарезервируйте место", "Начните мягкую адаптацию"],
     },
     testimonials: [
