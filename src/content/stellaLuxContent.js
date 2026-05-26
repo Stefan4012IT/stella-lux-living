@@ -37,6 +37,7 @@ export const stellaLuxContent = {
     ageGroups: {
       eyebrow: "Za sve uzraste",
       title: "Pažnja prilagođena svakoj fazi odrastanja.",
+      text: "Vaspitni i obrazovni pristup prilagođen je potrebama deteta, njegovom uzrastu, interesovanjima i tempu razvoja, kako bi svako dete imalo podršku da uči, istražuje i napreduje na način koji mu najviše odgovara.",
       items: [
         {
           age: "1-3 godine",
@@ -120,6 +121,7 @@ export const stellaLuxContent = {
       ],
       gallery: {
         carouselLabel: "Prostor Stella Lux vrtića",
+        carouselText: "Zavirite u prostor u kome dete uči, istražuje i raste.",
         imageLabel: "Fotografija prostora",
         open: "Otvori fotografiju",
         close: "Zatvori",
@@ -167,11 +169,17 @@ export const stellaLuxContent = {
           title: "Školica sporta Happy Kids",
           text: "Program fizičkih aktivnosti kroz koji deca razvijaju motoriku, koordinaciju, timski duh, samopouzdanje i zdrave navike.",
         },
+        {
+          title: "Balet",
+          text: "Kroz pokret, ritam i muziku podstiče pravilno držanje, koordinaciju, kreativnost i osećaj za disciplinu na pažljivo vođen način.",
+        },
       ],
     },
     subsidy: {
-      title: "Premium standard uz pravo na subvenciju grada.",
-      text: "Stella Lux je akreditovana predškolska ustanova, što roditeljima omogućava ostvarivanje prava na naknadu dela troškova boravka u iznosu od 33.000 RSD mesečno, u skladu sa uslovima grada Beograda.",
+      sectionTitle: "Premium standard uz pravo na subvenciju grada.",
+      sectionText: "Mogućnost gradske subvencije roditeljima pruža dodatnu finansijsku podršku pri upisu deteta u Stella Lux vrtić, uz isti nivo pažnje, programa i kvaliteta boravka.",
+      title: "Subvencija dostupna roditeljima",
+      text: "Stella Lux je akreditovana predškolska ustanova, što roditeljima omogućava da, u skladu sa uslovima Grada Beograda, ostvare pravo na naknadu dela troškova boravka u iznosu od 33.000 RSD mesečno.",
     },
     nutrition: {
       title: "Pažljivo osmišljena ishrana za svaki mali dan.",
@@ -192,7 +200,7 @@ export const stellaLuxContent = {
       {
         quote:
           "Stella Lux nas je osvojio toplim prostorom i stručnim timom. Kada smo upoznali vaspitačicu, znali smo da će naše dete biti u sigurnim rukama.",
-        author: "Porodica budućeg polaznika",
+        author: "Roditelj dečaka od 3 godine",
       },
       {
         quote:
@@ -207,12 +215,12 @@ export const stellaLuxContent = {
       {
         quote:
           "Već pri prvoj poseti osetili smo poverenje. Vaspitačica i tim su nas osvojili stručnošću, smirenošću i pristupom.",
-        author: "Mama budućeg polaznika",
+        author: "Mama predškolca",
       },
       {
         quote:
           "Najviše nam se dopalo što se svakom detetu pristupa pažljivo i individualno. Radujemo se početku.",
-        author: "Porodica budućeg polaznika",
+        author: "Roditelj devojčice od 5 godina",
       },
     ],
     finalCta: {
@@ -221,7 +229,7 @@ export const stellaLuxContent = {
       secondary: "Pozovite nas",
     },
     contactForm: {
-      eyebrow: "Kontakt",
+      eyebrow: "Hajde da se upoznamo",
       title: "Zakažite obilazak Stella Lux vrtića.",
       text: "Ostavite podatke i naš tim će vam se javiti sa predlogom termina za miran, privatni obilazak prostora.",
       fullName: "Ime i prezime",
@@ -285,6 +293,7 @@ export const stellaLuxContent = {
     ageGroups: {
       eyebrow: "For all ages",
       title: "Care shaped around every stage of growing up.",
+      text: "Our educational approach is adapted to each child's needs, age, interests and pace of development, so every child receives the support to learn, explore and progress in the way that suits them best.",
       items: [
         {
           age: "1-3 years",
@@ -368,6 +377,7 @@ export const stellaLuxContent = {
       ],
       gallery: {
         carouselLabel: "Inside Stella Lux",
+        carouselText: "Step into the space where your child learns, explores and grows.",
         imageLabel: "Space photo",
         open: "Open photo",
         close: "Close",
@@ -388,11 +398,14 @@ export const stellaLuxContent = {
         { title: "Project-based learning", text: "Thematic projects where children explore, collaborate, connect knowledge and reach their own conclusions." },
         { title: "Emotional and social development", text: "Support in recognizing emotions, developing empathy, communication, confidence and relationships with others." },
         { title: "Happy Kids sports school", text: "A physical activity program that develops motor skills, coordination, team spirit, confidence and healthy habits." },
+        { title: "Ballet", text: "Through movement, rhythm and music, ballet encourages good posture, coordination, creativity and a sense of discipline in a carefully guided way." },
       ],
     },
     subsidy: {
-      title: "Premium standards with access to city subsidy.",
-      text: "Stella Lux is an accredited preschool institution, allowing parents to apply for reimbursement of part of the monthly cost in the amount of 33,000 RSD, according to the City of Belgrade conditions.",
+      sectionTitle: "Premium standards with access to city subsidy.",
+      sectionText: "The city subsidy option provides parents with additional financial support when enrolling their child at Stella Lux, while maintaining the same level of care, program quality and comfort.",
+      title: "Subsidy available to parents",
+      text: "Stella Lux is an accredited preschool institution, allowing parents, in accordance with the City of Belgrade conditions, to receive reimbursement for part of the attendance costs in the amount of 33,000 RSD per month.",
     },
     nutrition: {
       title: "Thoughtful nutrition for every little day.",
@@ -437,7 +450,7 @@ export const stellaLuxContent = {
       secondary: "Call us",
     },
     contactForm: {
-      eyebrow: "Contact",
+      eyebrow: "Let's get acquainted",
       title: "Schedule a Stella Lux private tour.",
       text: "Leave your details and our team will suggest a calm private visit through the space.",
       fullName: "Full name",
@@ -501,6 +514,7 @@ export const stellaLuxContent = {
     ageGroups: {
       eyebrow: "Для всех возрастов",
       title: "Забота, адаптированная к каждому этапу развития.",
+      text: "Наш воспитательный и образовательный подход адаптирован к потребностям, возрасту, интересам и темпу развития ребенка, чтобы каждый ребенок получал поддержку для обучения, исследований и роста наиболее подходящим ему способом.",
       items: [
         {
           age: "1-3 года",
@@ -584,6 +598,7 @@ export const stellaLuxContent = {
       ],
       gallery: {
         carouselLabel: "Пространство Stella Lux",
+        carouselText: "Загляните в пространство, где ребенок учится, исследует и растет.",
         imageLabel: "Фотография пространства",
         open: "Открыть фотографию",
         close: "Закрыть",
@@ -604,11 +619,14 @@ export const stellaLuxContent = {
         { title: "Проектное обучение", text: "Тематические проекты, в которых дети исследуют, сотрудничают, связывают знания и приходят к собственным выводам." },
         { title: "Эмоциональное и социальное развитие", text: "Поддержка в распознавании эмоций, развитии эмпатии, общения, уверенности и отношений с другими." },
         { title: "Спортивная школа Happy Kids", text: "Программа физической активности, развивающая моторику, координацию, командный дух, уверенность и здоровые привычки." },
+        { title: "Балет", text: "Через движение, ритм и музыку балет развивает правильную осанку, координацию, творческие способности и чувство дисциплины в бережно направляемой форме." },
       ],
     },
     subsidy: {
-      title: "Premium стандарт с правом на городскую субсидию.",
-      text: "Stella Lux является аккредитованным дошкольным учреждением, что позволяет родителям подать заявку на компенсацию части ежемесячных расходов в размере 33.000 RSD, согласно условиям города Белграда.",
+      sectionTitle: "Премиальный стандарт с правом на городскую субсидию.",
+      sectionText: "Возможность получения городской субсидии предоставляет родителям дополнительную финансовую поддержку при зачислении ребенка в Stella Lux, при неизменно высоком уровне заботы, программы и качества пребывания.",
+      title: "Субсидия, доступная родителям",
+      text: "Stella Lux является аккредитованным дошкольным учреждением, что позволяет родителям, в соответствии с условиями города Белграда, получить компенсацию части расходов на пребывание в размере 33.000 RSD в месяц.",
     },
     nutrition: {
       title: "Продуманное питание на каждый маленький день.",
@@ -653,7 +671,7 @@ export const stellaLuxContent = {
       secondary: "Позвонить",
     },
     contactForm: {
-      eyebrow: "Контакт",
+      eyebrow: "Давайте познакомимся",
       title: "Запишитесь на визит в Stella Lux.",
       text: "Оставьте данные, и наша команда предложит удобное время для спокойного индивидуального визита.",
       fullName: "Имя и фамилия",

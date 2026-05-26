@@ -14,6 +14,7 @@ export default function AgeGroupsSection({ content }) {
         <div className="age-groups__heading motion-reveal">
           <p className="eyebrow eyebrow--muted">{content.ageGroups.eyebrow}</p>
           <h2>{content.ageGroups.title}</h2>
+          <p className="age-groups__text">{content.ageGroups.text}</p>
         </div>
 
         <div className="age-groups__grid">

@@ -2,12 +2,12 @@ export default function CloudBreak({ tone, direction = "forward" }) {
   const classes = [
     "cloud-break",
     tone === "blue" ? "cloud-break--white" : "cloud-break--cream",
-    direction === "reverse" ? "cloud-drift-reverse" : "cloud-drift-forward",
   ].join(" ");
+  const driftClass = direction === "reverse" ? "cloud-drift-reverse" : "cloud-drift-forward";
 
   return (
     <div className={classes} aria-hidden="true">
-      <svg viewBox="0 0 760 120" fill="none">
+      <svg className={driftClass} viewBox="0 0 760 120" fill="none">
         <g fill="currentColor">
           <ellipse cx="86" cy="70" rx="54" ry="34" />
           <ellipse cx="142" cy="54" rx="66" ry="45" />

@@ -65,6 +65,14 @@ export function ProgramIcon({ index }) {
       <path d="M40 16v48" stroke="#df5565" strokeWidth="4" strokeLinecap="round" />
       <path d="M24 24c11 7 21 7 32 0M24 56c11-7 21-7 32 0" stroke="#f0c66f" strokeWidth="4" strokeLinecap="round" />
     </svg>,
+    <svg key="ballet" viewBox="0 0 80 80" fill="none">
+      <circle cx="40" cy="16" r="7" fill="#f1b7c6" />
+      <path d="M39 24c-1 10-7 14-15 17M41 24c1 10 7 14 15 17" stroke="#23495c" strokeWidth="4" strokeLinecap="round" />
+      <path d="M40 25 28 48h24L40 25Z" fill="#f1b7c6" />
+      <path d="M28 48h24" stroke="#f0c66f" strokeWidth="4" strokeLinecap="round" />
+      <path d="M37 48 27 65M43 48l10 17" stroke="#23495c" strokeWidth="4" strokeLinecap="round" />
+      <path d="M24 65h7M50 65h7" stroke="#df5565" strokeWidth="4" strokeLinecap="round" />
+    </svg>,
   ];
 
   return <span className="icon-badge">{icons[index % icons.length]}</span>;

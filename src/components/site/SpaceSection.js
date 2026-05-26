@@ -2,9 +2,24 @@ import SpaceShowcase from "@/components/ui/SpaceShowcase";
 import { assetPath } from "@/lib/paths";
 
 export default function SpaceSection({ content }) {
-  const showcaseItems = Array.from({ length: 8 }, (_, index) => ({
+  const galleryFiles = [
+    "prostor-0.png",
+    "prostor-1.png",
+    "prostor-2.png",
+    "prostor-3.png",
+    "prostor-4.png",
+    "prostor-5.png",
+    "prostor-6.png",
+    "prostor-7.png",
+    "prostor-8.jpg",
+    "prostor-9.png",
+    "prostor-10.png",
+    "prostor-11.png",
+    "prostor-12.png",
+  ];
+  const showcaseItems = galleryFiles.map((filename, index) => ({
     title: `${content.space.gallery.imageLabel} ${index + 1}`,
-    src: assetPath(`/images/space/prostor-${index + 1}.${index === 5 || index === 7 ? "jpg" : "png"}`),
+    src: assetPath(`/images/space/${filename}`),
   }));
 
   return (

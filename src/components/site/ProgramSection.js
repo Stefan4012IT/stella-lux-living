@@ -15,12 +15,12 @@ export default function ProgramSection({ content }) {
       <div className="program__shell">
         <div
           className="program__feature"
-          style={{ "--program-feature-bg": `url(${assetPath("/images/store/children-playroom-group.jpg")})` }}
+          style={{ "--program-feature-bg": `url(${assetPath("/images/backgrounds/program__shell_background.png")})` }}
         >
           <div className="section-shell">
             <div className="program__intro motion-reveal">
-              <h2>{content.program.title}</h2>
-              {content.program.text ? <p>{content.program.text}</p> : null}
+              <h2>{content.subsidy.sectionTitle}</h2>
+              <p>{content.subsidy.sectionText}</p>
               <div className="subsidy-card">
                 <div className="subsidy-card__badge">
                   <span>{subsidyAmount}</span>
@@ -35,6 +35,10 @@ export default function ProgramSection({ content }) {
         </div>
 
         <div className="program__activities">
+          <div className="section-shell program__activities-intro motion-reveal">
+            <h2>{content.program.title}</h2>
+            {content.program.text ? <p>{content.program.text}</p> : null}
+          </div>
           <div className="program-list">
             {programItems.map((item, index) => (
               <button

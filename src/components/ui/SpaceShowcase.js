@@ -94,7 +94,10 @@ export default function SpaceShowcase({ features, items, labels }) {
         onBlurCapture={() => setIsPaused(false)}
       >
         <div className="space-showcase__toolbar">
-          <p>{labels.carouselLabel}</p>
+          <div className="space-showcase__caption">
+            <p className="space-showcase__title">{labels.carouselLabel}</p>
+            <p className="space-showcase__text">{labels.carouselText}</p>
+          </div>
           <div className="space-showcase__controls">
             <button
               type="button"
@@ -175,7 +178,6 @@ export default function SpaceShowcase({ features, items, labels }) {
             <div className="lightbox__image">
               <Image src={items[lightboxIndex].src} alt={items[lightboxIndex].title} fill sizes="92vw" className="media-contain" priority />
             </div>
-            <figcaption>{items[lightboxIndex].title}</figcaption>
           </figure>
           <button
             type="button"

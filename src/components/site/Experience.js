@@ -8,6 +8,9 @@ export default function Experience({ content }) {
     "/images/experience/04-celovit-razvoj.png",
     "/images/experience/05-kultura-i-priroda.png",
     "/images/experience/06-visoki-standardi.png",
+    "/images/experience/07-dodatne-aktivnosti.png",
+    "/images/experience/08-zdrava-ishrana.png",
+    "/images/experience/09-standard.png",
   ];
 
   return (

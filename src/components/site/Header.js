@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import MobileNavigation from "@/components/ui/MobileNavigation";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
@@ -28,10 +29,13 @@ export default function Header({ locale, content }) {
         </nav>
 
         <div className="site-header__actions">
-          <LanguageSwitcher locale={locale} />
-          <a href="#kontakt" className="button button--light button--small">
+          <div className="site-header__locale">
+            <LanguageSwitcher locale={locale} />
+          </div>
+          <a href="#kontakt" className="site-header__cta button button--light button--small">
             {content.headerCta}
           </a>
+          <MobileNavigation items={content.nav} links={navLinks} cta={content.headerCta} />
         </div>
       </div>
     </header>
