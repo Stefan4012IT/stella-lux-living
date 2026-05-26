@@ -1,11 +1,15 @@
 import TestimonialsCarousel from "@/components/ui/TestimonialsCarousel";
 import { MealIcon } from "./ProgramIcons";
+import { assetPath } from "@/lib/paths";
 
 export default function AdmissionSection({ content }) {
   return (
     <section id="upis" className="section section--white admission">
       <div className="section-shell admission__stack">
-        <div className="nutrition-card motion-reveal">
+        <div
+          className="nutrition-card motion-reveal"
+          style={{ "--nutrition-card-bg": `url(${assetPath("/images/backgrounds/nutrition-card_background.png")})` }}
+        >
           <div className="nutrition-card__intro">
             <h2>{content.nutrition.title}</h2>
             {content.nutrition.text ? <p>{content.nutrition.text}</p> : null}
