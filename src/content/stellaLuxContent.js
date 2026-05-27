@@ -197,6 +197,38 @@ export const stellaLuxContent = {
       steps: ["Pošaljite upit", "Zakažite obilazak vrtića", "Rezervišite mesto", "Započnite gentle adaptation proces"],
       continueToForm: "Nastavite do forme za prijavu",
     },
+    benefits: {
+      eyebrow: "Stella Lux svakodnevica",
+      title: "Šta dobijate upisom u Stella Lux.",
+      text: "Pažljivo spajamo sigurnost, negu, edukaciju i iskustva koja deci daju miran ritam, a roditeljima jasno poverenje.",
+      groups: [
+        {
+          title: "Šta dobijate",
+          items: [
+            "Celodnevni boravak u sigurnom i podsticajnom okruženju",
+            "Jedinstven vaspitno-obrazovni pristup",
+            "Nutritivno izbalansirane obroke",
+            "Dodatne radionice i pažljivo osmišljene aktivnosti iz oblasti sporta, umetnosti, engleskog jezika...",
+            "Projektnu nastavu kroz igru i istraživanje",
+            "Jednodnevne i višednevne izlete u prirodu",
+            "Posete muzejima i kulturnim ustanovama",
+            "Boravak, igru i učenje u prirodi",
+          ],
+        },
+        {
+          title: "Šta vaše dete dobija",
+          items: [
+            "Sticanje zdravih navika i veće samostalnosti",
+            "Razvoj kreativnosti i radoznalosti",
+            "Jačanje samopouzdanja kroz podršku",
+            "Usvajanje socijalnih veština kroz prijateljstva i saradnju",
+            "Bogaćenje jezičkog, motoričkog i emocionalnog iskustva",
+            "Učenje kroz istraživanje, umetnost i igru",
+            "Osećaj pripadnosti, sigurnosti i prihvaćenosti",
+          ],
+        },
+      ],
+    },
     testimonials: [
       {
         quote:
@@ -429,6 +461,38 @@ export const stellaLuxContent = {
       steps: ["Send an inquiry", "Schedule a private tour", "Reserve a place", "Begin a gentle adaptation process"],
       continueToForm: "Continue to the inquiry form",
     },
+    benefits: {
+      eyebrow: "Stella Lux everyday care",
+      title: "What you receive with Stella Lux.",
+      text: "We connect safety, care, education and meaningful experiences so children have a calm rhythm and parents have clear trust.",
+      groups: [
+        {
+          title: "What you receive",
+          items: [
+            "Full-day care in a safe and stimulating environment",
+            "A distinctive educational approach",
+            "Nutritionally balanced meals",
+            "Additional workshops and carefully designed activities in sport, art, English and more",
+            "Project-based learning through play and exploration",
+            "One-day and multi-day nature trips",
+            "Visits to museums and cultural institutions",
+            "Time, play and learning in nature",
+          ],
+        },
+        {
+          title: "What your child receives",
+          items: [
+            "Healthy habits and greater independence",
+            "Development of creativity and curiosity",
+            "Stronger confidence through support",
+            "Social skills through friendships and cooperation",
+            "Richer language, motor and emotional experience",
+            "Learning through exploration, art and play",
+            "A sense of belonging, safety and acceptance",
+          ],
+        },
+      ],
+    },
     testimonials: [
       {
         quote:
@@ -655,6 +719,38 @@ export const stellaLuxContent = {
       text: "Поступление начинается спокойно и просто: отправьте запрос, познакомьтесь с пространством и командой, а затем вместе определим лучший ритм адаптации для вашего ребенка.",
       steps: ["Отправьте запрос", "Запишитесь на визит", "Зарезервируйте место", "Начните мягкую адаптацию"],
       continueToForm: "Перейти к форме заявки",
+    },
+    benefits: {
+      eyebrow: "Повседневная забота Stella Lux",
+      title: "Что вы получаете в Stella Lux.",
+      text: "Мы объединяем безопасность, заботу, образование и содержательный опыт, чтобы у детей был спокойный ритм, а у родителей - доверие.",
+      groups: [
+        {
+          title: "Что вы получаете",
+          items: [
+            "Полный день в безопасной и стимулирующей среде",
+            "Особый воспитательно-образовательный подход",
+            "Нутриционно сбалансированное питание",
+            "Дополнительные мастерские и продуманные занятия спортом, искусством, английским языком и не только",
+            "Проектное обучение через игру и исследование",
+            "Однодневные и многодневные поездки на природу",
+            "Посещения музеев и культурных учреждений",
+            "Пребывание, игра и обучение на природе",
+          ],
+        },
+        {
+          title: "Что получает ваш ребенок",
+          items: [
+            "Формирование здоровых привычек и большей самостоятельности",
+            "Развитие творчества и любознательности",
+            "Укрепление уверенности через поддержку",
+            "Социальные навыки через дружбу и сотрудничество",
+            "Более богатый языковой, моторный и эмоциональный опыт",
+            "Обучение через исследование, искусство и игру",
+            "Чувство принадлежности, безопасности и принятия",
+          ],
+        },
+      ],
     },
     testimonials: [
       {

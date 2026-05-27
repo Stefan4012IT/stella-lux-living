@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import AdmissionProcessSection from "@/components/site/AdmissionProcessSection";
 import AgeGroupsSection from "@/components/site/AgeGroupsSection";
+import BenefitsSection from "@/components/site/BenefitsSection";
 import CloudBreak from "@/components/site/CloudBreak";
 import ContactSection from "@/components/site/ContactSection";
 import Experience from "@/components/site/Experience";
@@ -67,6 +68,7 @@ export default async function LocalePage({ params }) {
       <SubsidySection content={content} />
 
       <AdmissionProcessSection content={content} />
+      <BenefitsSection content={content} />
       <ContactSection locale={locale} content={content} />
       <FinalCta content={content} />
       <Footer locale={locale} content={content} />

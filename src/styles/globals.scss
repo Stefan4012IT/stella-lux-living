@@ -205,6 +205,7 @@ p {
 .program-item,
 .meal-card,
 .admission-card,
+.benefits-card,
 .nutrition-card,
 .space-panel,
 .final-cta__panel,
@@ -1468,6 +1469,113 @@ p {
   }
 }
 
+.benefits-section {
+  padding-top: clamp(2.75rem, 5vw, 4.5rem);
+  background:
+    linear-gradient(180deg, var(--paper) 0%, rgba(232, 243, 248, 0.62) 100%),
+    var(--sky-soft);
+}
+
+.benefits-card {
+  overflow: hidden;
+  border: 1px solid rgba(173, 203, 224, 0.44);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.4rem, 3vw, 2.6rem);
+  background:
+    radial-gradient(circle at 8% 6%, rgba(240, 198, 111, 0.24), transparent 18rem),
+    radial-gradient(circle at 96% 12%, rgba(241, 183, 198, 0.22), transparent 18rem),
+    rgba(255, 255, 255, 0.88);
+}
+
+.benefits-card__intro {
+  display: grid;
+  max-width: 54rem;
+  gap: 0.8rem;
+
+  span {
+    color: #9d8140;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: var(--ink);
+    font-size: clamp(2.3rem, 5vw, 4.4rem);
+    line-height: 1.02;
+  }
+
+  p {
+    max-width: 48rem;
+    color: var(--muted);
+    font-size: clamp(1rem, 1.45vw, 1.16rem);
+    line-height: 1.72;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.4rem);
+  margin-top: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.benefit-group {
+  border: 1px solid rgba(232, 220, 203, 0.92);
+  border-radius: var(--radius-md);
+  padding: clamp(1.25rem, 2.3vw, 1.8rem);
+  background: rgba(255, 255, 255, 0.78);
+
+  h3 {
+    color: var(--ink-2);
+    font-size: clamp(1.35rem, 2.2vw, 2rem);
+  }
+
+  ul {
+    display: grid;
+    gap: 0.82rem;
+    margin: 1.15rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    min-height: 2.15rem;
+    padding-left: 2.35rem;
+    color: var(--muted);
+    font-size: 0.98rem;
+    font-weight: 650;
+    line-height: 1.48;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    top: 0.08rem;
+    left: 0;
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 0.55rem;
+    background:
+      linear-gradient(135deg, rgba(240, 198, 111, 0.95), rgba(241, 183, 198, 0.72));
+    box-shadow: 0 8px 18px rgba(35, 73, 92, 0.09);
+  }
+
+  li::after {
+    content: "";
+    position: absolute;
+    top: 0.43rem;
+    left: 0.53rem;
+    width: 0.38rem;
+    height: 0.62rem;
+    border: solid var(--ink-2);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
 @keyframes admission-scroll-bounce {
   0%,
   100% {
@@ -2108,7 +2216,8 @@ p {
   .intro-grid,
   .space-section__top,
   .program__grid,
-  .admission__grid {
+  .admission__grid,
+  .benefits-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2233,6 +2342,15 @@ p {
 
   .section {
     padding-inline: 1rem;
+  }
+
+  .benefits-card {
+    border-radius: 1.4rem;
+    padding: 1.15rem;
+  }
+
+  .benefit-group {
+    border-radius: 1.15rem;
   }
 
   .space-panel {
