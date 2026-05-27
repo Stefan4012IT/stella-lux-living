@@ -6,7 +6,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux je premium predškolska ustanova u kompleksu Lux 51, sa više od 500 m² prostora, Reggio inspirisanim pristupom i pravom na gradsku subvenciju.",
     },
-    nav: ["Upis", "O nama", "Program", "Prostor", "Zašto Stella?"],
+    nav: ["Upis", "O nama", "Program", "Prostor", "Zašto Stella?", "Kontakt"],
     headerCta: "Zakažite termin",
     hero: {
       eyebrow: "Lux 51, Bežanijska kosa",
@@ -307,7 +307,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux is a premium preschool in Lux 51 with more than 500 sqm of designed space, a Reggio-inspired approach and accredited early years care.",
     },
-    nav: ["Admissions", "About us", "Program", "Space", "Why Stella?"],
+    nav: ["Admissions", "About us", "Program", "Space", "Why Stella?", "Contact"],
     headerCta: "Schedule a visit",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",
@@ -568,7 +568,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux - premium дошкольное учреждение в комплексе Lux 51: более 500 м2 пространства, Reggio-inspired подход и аккредитованная программа.",
     },
-    nav: ["Прием", "О нас", "Программа", "Пространство", "Почему Stella?"],
+    nav: ["Прием", "О нас", "Программа", "Пространство", "Почему Stella?", "Контакт"],
     headerCta: "Записаться",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",

@@ -8,7 +8,7 @@ export default function Footer({ locale, content }) {
   const locationHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.contact.address)}`;
 
   return (
-    <footer className="site-footer">
+    <footer id="footer" className="site-footer">
       <div className="section-shell site-footer__inner">
         <div>
           <Image

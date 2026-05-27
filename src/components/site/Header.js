@@ -5,7 +5,7 @@ import MobileNavigation from "@/components/ui/MobileNavigation";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
-  const navLinks = ["#admissions", "#about", "#educational-approach", "#space", "#why-stella"];
+  const navLinks = ["#admissions", "#about", "#educational-approach", "#space", "#why-stella", "#footer"];
 
   return (
     <header className="site-header">
