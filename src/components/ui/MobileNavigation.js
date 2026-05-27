@@ -44,7 +44,7 @@ export default function MobileNavigation({ items, links, cta }) {
             </a>
           ))}
         </nav>
-        <a href="#kontakt" className="button button--ink" onClick={() => setIsOpen(false)}>
+        <a href="#contact" className="button button--ink" onClick={() => setIsOpen(false)}>
           {cta}
         </a>
       </div>

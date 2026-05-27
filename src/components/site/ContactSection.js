@@ -116,7 +116,7 @@ export default function ContactSection({ locale, content }) {
   }
 
   return (
-    <section className="section contact-section" id="kontakt">
+    <section className="section contact-section" id="contact">
       <div className="section-shell contact-card motion-reveal">
         <div className="contact-card__copy">
           <p className="eyebrow eyebrow--muted">{labels.eyebrow}</p>

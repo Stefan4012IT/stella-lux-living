@@ -23,7 +23,7 @@ export default function SpaceSection({ content }) {
   }));
 
   return (
-    <section id="section-2" className="section section--cream space-section">
+    <section id="space" className="section section--cream space-section">
       <div className="section-shell space-section__top">
         <div className="space-panel motion-reveal">
           <p className="eyebrow eyebrow--blue">{content.space.eyebrow}</p>

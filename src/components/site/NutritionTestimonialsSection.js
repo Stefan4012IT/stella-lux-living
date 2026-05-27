@@ -2,9 +2,9 @@ import TestimonialsCarousel from "@/components/ui/TestimonialsCarousel";
 import { MealIcon } from "./ProgramIcons";
 import { assetPath } from "@/lib/paths";
 
-export default function AdmissionSection({ content }) {
+export default function NutritionTestimonialsSection({ content }) {
   return (
-    <section id="upis" className="section section--white admission">
+    <section id="nutrition-and-testimonials" className="section section--white nutrition-testimonials-section">
       <div className="section-shell admission__stack">
         <div
           className="nutrition-card motion-reveal"
@@ -28,27 +28,6 @@ export default function AdmissionSection({ content }) {
         </div>
 
         <TestimonialsCarousel testimonials={content.testimonials} />
-
-        <div id="admission-card" className="admission-card motion-reveal">
-          <h2>{content.admission.title}</h2>
-          {content.admission.text ? <p>{content.admission.text}</p> : null}
-          <div className="admission-steps">
-            {content.admission.steps.map((step, index) => (
-              <div key={step} className="admission-step">
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{step}</strong>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <a className="admission-scroll-cue motion-reveal" href="#kontakt" aria-label={content.admission.continueToForm}>
-          <span>{content.admission.continueToForm}</span>
-          <i aria-hidden="true">
-            <b />
-            <b />
-          </i>
-        </a>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import AdmissionSection from "@/components/site/AdmissionSection";
+import AdmissionProcessSection from "@/components/site/AdmissionProcessSection";
 import AgeGroupsSection from "@/components/site/AgeGroupsSection";
 import CloudBreak from "@/components/site/CloudBreak";
 import ContactSection from "@/components/site/ContactSection";
@@ -9,8 +9,10 @@ import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
 import Intro from "@/components/site/Intro";
-import ProgramSection from "@/components/site/ProgramSection";
+import NutritionTestimonialsSection from "@/components/site/NutritionTestimonialsSection";
+import ProgramActivitiesSection from "@/components/site/ProgramActivitiesSection";
 import SpaceSection from "@/components/site/SpaceSection";
+import SubsidySection from "@/components/site/SubsidySection";
 import StellaLuxMotion from "@/components/ui/StellaLuxMotion";
 import { stellaLuxContent } from "@/content/stellaLuxContent";
 import { isLocale, locales } from "@/lib/i18n";
@@ -56,11 +58,15 @@ export default async function LocalePage({ params }) {
       <Intro content={content} />
       <AgeGroupsSection content={content} />
       <CloudBreak tone="cream" direction="reverse" />
+      <ProgramActivitiesSection content={content} />
+      <SpaceSection content={content} />
+      <NutritionTestimonialsSection content={content} />
       <Experience content={content} />
       <CloudBreak tone="blue" />
-      <SpaceSection content={content} />
-      <ProgramSection content={content} />
-      <AdmissionSection content={content} />
+
+      <SubsidySection content={content} />
+
+      <AdmissionProcessSection content={content} />
       <ContactSection locale={locale} content={content} />
       <FinalCta content={content} />
       <Footer locale={locale} content={content} />

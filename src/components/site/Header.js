@@ -5,7 +5,7 @@ import MobileNavigation from "@/components/ui/MobileNavigation";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
-  const navLinks = ["#admission-card", "#section-0", "#age-groups", "#section-2", "#section-1"];
+  const navLinks = ["#admissions", "#about", "#educational-approach", "#space", "#why-stella"];
 
   return (
     <header className="site-header">
@@ -32,7 +32,7 @@ export default function Header({ locale, content }) {
           <div className="site-header__locale">
             <LanguageSwitcher locale={locale} />
           </div>
-          <a href="#kontakt" className="site-header__cta button button--light button--small">
+          <a href="#contact" className="site-header__cta button button--light button--small">
             {content.headerCta}
           </a>
           <MobileNavigation items={content.nav} links={navLinks} cta={content.headerCta} />

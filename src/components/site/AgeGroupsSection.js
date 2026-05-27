@@ -9,7 +9,7 @@ export default function AgeGroupsSection({ content }) {
   ];
 
   return (
-    <section id="age-groups" className="section age-groups">
+    <section id="educational-approach" className="section age-groups">
       <div className="section-shell">
         <div className="age-groups__heading motion-reveal">
           <p className="eyebrow eyebrow--muted">{content.ageGroups.eyebrow}</p>

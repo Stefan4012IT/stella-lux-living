@@ -3,7 +3,7 @@ import { assetPath } from "@/lib/paths";
 
 export default function Intro({ content }) {
   return (
-    <section id="section-0" className="section section--cream">
+    <section id="about" className="section section--cream">
       <div className="section-shell intro-grid">
         <div className="intro-heading motion-reveal">
           <p className="eyebrow eyebrow--muted">{content.intro.eyebrow}</p>

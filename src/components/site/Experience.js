@@ -14,7 +14,7 @@ export default function Experience({ content }) {
   ];
 
   return (
-    <section id="section-1" className="section section--white experience">
+    <section id="why-stella" className="section section--white experience">
       <div className="section-shell">
         <div className="section-heading experience__heading">
           <p className="eyebrow eyebrow--muted">{content.pillarsEyebrow}</p>

@@ -100,7 +100,7 @@ p {
   }
 }
 
-#section-0 {
+#about {
   background:
     linear-gradient(135deg, rgba(251, 248, 242, 0.88), rgba(232, 243, 248, 0.74)),
     radial-gradient(circle at 16% 22%, rgba(240, 198, 111, 0.16), transparent 20rem),
@@ -430,6 +430,7 @@ p {
 
 .intro-grid h2,
 .program h2,
+.nutrition-testimonials-section h2,
 .admission h2,
 .final-cta h2 {
   font-size: clamp(2.35rem, 5vw, 5.2rem);
@@ -963,6 +964,10 @@ p {
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
+.nutrition-testimonials-section {
+  padding-block: clamp(2.25rem, 4vw, 3.5rem);
+}
+
 .admission {
   position: relative;
   padding-bottom: clamp(6.75rem, 10vw, 8.5rem);
@@ -971,12 +976,6 @@ p {
 .section.program {
   padding: 0;
   background: var(--sky);
-}
-
-.program__shell {
-  display: grid;
-  gap: 0;
-  width: 100%;
 }
 
 .program__feature {
