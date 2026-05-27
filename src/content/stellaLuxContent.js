@@ -120,7 +120,7 @@ export const stellaLuxContent = {
         "Outdoor play yard",
       ],
       gallery: {
-        carouselLabel: "Prostor Stella Lux vrtića",
+        carouselLabel: "Zavirite u inspirativan prostor Stella Lux-a",
         carouselText: "Zavirite u prostor u kome dete uči, istražuje i raste.",
         imageLabel: "Fotografija prostora",
         open: "Otvori fotografiju",
