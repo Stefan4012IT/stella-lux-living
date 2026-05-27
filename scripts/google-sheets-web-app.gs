@@ -22,15 +22,22 @@ function doPost(event) {
   }
 
   const sheet = getLeadSheet();
-  sheet.appendRow(
-    HEADERS.map((header) => {
-      if (header === "submittedAt") {
-        return data.submittedAt || new Date().toISOString();
-      }
+  const row = HEADERS.map((header) => {
+    if (header === "submittedAt") {
+      return data.submittedAt || new Date().toISOString();
+    }
 
-      return cleanValue(data[header] || "");
-    }),
-  );
+    if (header === "phone") {
+      return cleanPhone(data[header] || "");
+    }
+
+    return cleanValue(data[header] || "");
+  });
+
+  const nextRow = sheet.getLastRow() + 1;
+  const range = sheet.getRange(nextRow, 1, 1, HEADERS.length);
+  range.setNumberFormat("@");
+  range.setValues([row]);
 
   return jsonResponse({ ok: true });
 }
@@ -72,6 +79,10 @@ function validateLead(data) {
 
 function cleanValue(value) {
   return String(value).trim().replace(/\s+/g, " ");
+}
+
+function cleanPhone(value) {
+  return cleanValue(value).replace(/[^\d+]/g, "");
 }
 
 function jsonResponse(payload) {
