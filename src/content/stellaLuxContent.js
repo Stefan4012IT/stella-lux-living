@@ -121,7 +121,8 @@ export const stellaLuxContent = {
       ],
       gallery: {
         carouselLabel: "Zavirite u inspirativan prostor Stella Lux-a",
-        carouselText: "Zavirite u prostor u kome dete uči, istražuje i raste.",
+        carouselText:
+          "Prostor u Stella Luxu je važan deo dečijeg sazrevanja, razvoja i napretka, posebno dizajniran da ima ulogu trećeg vaspitača.",
         imageLabel: "Fotografija prostora",
         open: "Otvori fotografiju",
         close: "Zatvori",
@@ -203,7 +204,7 @@ export const stellaLuxContent = {
       text: "Pažljivo spajamo sigurnost, negu, edukaciju i iskustva koja deci daju miran ritam, a roditeljima jasno poverenje.",
       groups: [
         {
-          title: "Šta dobijate",
+          title: "Šta dobijate?",
           items: [
             "Celodnevni boravak u sigurnom i podsticajnom okruženju",
             "Jedinstven vaspitno-obrazovni pristup",
@@ -216,7 +217,7 @@ export const stellaLuxContent = {
           ],
         },
         {
-          title: "Šta vaše dete dobija",
+          title: "Šta vaše dete dobija?",
           items: [
             "Sticanje zdravih navika i veće samostalnosti",
             "Razvoj kreativnosti i radoznalosti",
