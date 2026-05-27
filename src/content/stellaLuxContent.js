@@ -12,7 +12,8 @@ export const stellaLuxContent = {
       eyebrow: "Lux 51, Bežanijska kosa",
       title: "Detinjstvo koje sija počinje ovde.",
       subtitle: "Premium Early Childhood Experience",
-      text1: "Dobro došli u savremeni vrtić na Bežanijskoj kosi, osmišljen za igru, učenje i celovit razvoj dece od 1 do 7 godina.",
+      text1:
+        "Dobro došli u savremeni, zvanično akreditovani vrtić na Bežanijskoj kosi, osmišljen za igru, učenje i celovit razvoj dece od 1 do 7 godina.",
       text2: "Stella Lux spaja toplinu doma, promišljene prostore i savremeni obrazovni pristup koji podržava autentičnost, radoznalost i samopouzdanje svakog deteta.",
       primaryCta: "Zakažite obilazak",
       secondaryCta: "Saznajte više o upisu",
@@ -199,8 +200,8 @@ export const stellaLuxContent = {
       continueToForm: "Nastavite do forme za prijavu",
     },
     benefits: {
-      eyebrow: "Stella Lux svakodnevica",
-      title: "Šta dobijate upisom u Stella Lux.",
+      eyebrow: "Sve na jednom mestu",
+      title: "Šta dobijate upisom u Stella Lux?",
       text: "Pažljivo spajamo sigurnost, negu, edukaciju i iskustva koja deci daju miran ritam, a roditeljima jasno poverenje.",
       groups: [
         {
@@ -312,7 +313,8 @@ export const stellaLuxContent = {
       eyebrow: "Lux 51, Bezanijska kosa",
       title: "A childhood that shines begins here.",
       subtitle: "Premium Early Childhood Experience",
-      text1: "Welcome to a modern preschool in Bezanijska kosa, designed for play, learning and the holistic development of children aged 1 to 7. ",
+      text1:
+        "Welcome to a modern, officially accredited preschool in Bezanijska kosa, designed for play, learning and the holistic development of children aged 1 to 7.",
       text2: "Stella Lux combines the warmth of home, thoughtful spaces and a modern educational approach that supports every child's authenticity, curiosity and confidence.",
       primaryCta: "Schedule a private tour",
       secondaryCta: "Explore admissions",
@@ -464,8 +466,8 @@ export const stellaLuxContent = {
       continueToForm: "Continue to the inquiry form",
     },
     benefits: {
-      eyebrow: "Stella Lux everyday care",
-      title: "What you receive with Stella Lux.",
+      eyebrow: "Everything in one place",
+      title: "What do you receive by enrolling in Stella Lux?",
       text: "We connect safety, care, education and meaningful experiences so children have a calm rhythm and parents have clear trust.",
       groups: [
         {
@@ -572,7 +574,8 @@ export const stellaLuxContent = {
       eyebrow: "Lux 51, Bezanijska kosa",
       title: "Детство, которое сияет, начинается здесь.",
       subtitle: "Premium Early Childhood Experience",
-      text1: "Добро пожаловать в современный детский сад в Bezanijska kosa, созданный для игры, обучения и всестороннего развития детей от 1 до 7 лет.",
+      text1:
+        "Добро пожаловать в современный, официально аккредитованный детский сад в Bezanijska kosa, созданный для игры, обучения и всестороннего развития детей от 1 до 7 лет.",
       text2: "Stella Lux объединяет домашнее тепло, продуманное пространство и современный образовательный подход, поддерживающий индивидуальность, любознательность и уверенность каждого ребенка.",
       primaryCta: "Записаться на визит",
       secondaryCta: "Узнать о приеме",
@@ -724,8 +727,8 @@ export const stellaLuxContent = {
       continueToForm: "Перейти к форме заявки",
     },
     benefits: {
-      eyebrow: "Повседневная забота Stella Lux",
-      title: "Что вы получаете в Stella Lux.",
+      eyebrow: "Все в одном месте",
+      title: "Что вы получаете при поступлении в Stella Lux?",
       text: "Мы объединяем безопасность, заботу, образование и содержательный опыт, чтобы у детей был спокойный ритм, а у родителей - доверие.",
       groups: [
         {
