@@ -415,8 +415,9 @@ export const stellaLuxContent = {
         "Outdoor play yard",
       ],
       gallery: {
-        carouselLabel: "Inside Stella Lux",
-        carouselText: "Step into the space where your child learns, explores and grows.",
+        carouselLabel: "Step into the inspiring Stella Lux space",
+        carouselText:
+          "The space at Stella Lux is an important part of children's maturation, development and progress, specially designed to act as the third teacher.",
         imageLabel: "Space photo",
         open: "Open photo",
         close: "Close",
@@ -468,7 +469,7 @@ export const stellaLuxContent = {
       text: "We connect safety, care, education and meaningful experiences so children have a calm rhythm and parents have clear trust.",
       groups: [
         {
-          title: "What you receive",
+          title: "What you receive?",
           items: [
             "Full-day care in a safe and stimulating environment",
             "A distinctive educational approach",
@@ -481,7 +482,7 @@ export const stellaLuxContent = {
           ],
         },
         {
-          title: "What your child receives",
+          title: "What your child receives?",
           items: [
             "Healthy habits and greater independence",
             "Development of creativity and curiosity",
@@ -674,8 +675,9 @@ export const stellaLuxContent = {
         "Двор для игр",
       ],
       gallery: {
-        carouselLabel: "Пространство Stella Lux",
-        carouselText: "Загляните в пространство, где ребенок учится, исследует и растет.",
+        carouselLabel: "Загляните во вдохновляющее пространство Stella Lux",
+        carouselText:
+          "Пространство Stella Lux является важной частью взросления, развития и прогресса ребенка и специально спроектировано так, чтобы выполнять роль третьего воспитателя.",
         imageLabel: "Фотография пространства",
         open: "Открыть фотографию",
         close: "Закрыть",
@@ -727,7 +729,7 @@ export const stellaLuxContent = {
       text: "Мы объединяем безопасность, заботу, образование и содержательный опыт, чтобы у детей был спокойный ритм, а у родителей - доверие.",
       groups: [
         {
-          title: "Что вы получаете",
+          title: "Что вы получаете?",
           items: [
             "Полный день в безопасной и стимулирующей среде",
             "Особый воспитательно-образовательный подход",
@@ -740,7 +742,7 @@ export const stellaLuxContent = {
           ],
         },
         {
-          title: "Что получает ваш ребенок",
+          title: "Что получает ваш ребенок?",
           items: [
             "Формирование здоровых привычек и большей самостоятельности",
             "Развитие творчества и любознательности",
