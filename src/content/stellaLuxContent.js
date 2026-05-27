@@ -224,7 +224,7 @@ export const stellaLuxContent = {
       },
     ],
     finalCta: {
-      title: "Za srećno detinjstvo danas. Za sigurnu budućnost sutra.",
+      title: "Mali koraci danas, velika sigurnost za sutra.",
       primary: "Zakažite obilazak",
       secondary: "Pozovite nas",
     },
@@ -445,7 +445,7 @@ export const stellaLuxContent = {
       },
     ],
     finalCta: {
-      title: "For a happy childhood today. For a confident future tomorrow.",
+      title: "Small steps today, greater confidence tomorrow.",
       primary: "Schedule a tour",
       secondary: "Call us",
     },
@@ -666,7 +666,7 @@ export const stellaLuxContent = {
       },
     ],
     finalCta: {
-      title: "Для счастливого детства сегодня. Для уверенного будущего завтра.",
+      title: "Маленькие шаги сегодня, большая уверенность завтра.",
       primary: "Записаться на визит",
       secondary: "Позвонить",
     },
