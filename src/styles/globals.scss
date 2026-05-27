@@ -624,7 +624,7 @@ p {
   &:nth-child(2),
   &:nth-child(4),
   &:nth-child(9) {
-    --pillar-overlay: linear-gradient(180deg, rgba(241, 183, 198, 0.04) 0%, rgba(241, 183, 198, 0.12) 45%, rgba(241, 183, 198, 0.46) 62%, rgba(241, 183, 198, 0.88) 100%);
+    --pillar-overlay: linear-gradient(180deg, rgba(216, 176, 178, 0.04) 0%, rgba(216, 176, 178, 0.12) 45%, rgba(216, 176, 178, 0.46) 62%, rgba(216, 176, 178, 0.88) 100%);
   }
 
   &:nth-child(3),
@@ -868,7 +868,6 @@ p {
   background: white;
   color: var(--ink);
   box-shadow: var(--shadow);
-  transition: background 220ms ease, color 220ms ease, border 220ms ease, transform 220ms ease;
 
   span {
     font-size: clamp(0.98rem, 1.25vw, 1.18rem);
@@ -881,17 +880,6 @@ p {
     height: 0.62rem;
     border-radius: 999px;
     background: var(--sky);
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    border-color: var(--sky);
-    background: var(--ink-2);
-    color: white;
-
-    i {
-      background: var(--gold);
-    }
   }
 }
 
@@ -973,6 +961,11 @@ p {
 .admission__stack {
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.admission {
+  position: relative;
+  padding-bottom: clamp(6.75rem, 10vw, 8.5rem);
 }
 
 .section.program {
@@ -1429,6 +1422,70 @@ p {
   }
 }
 
+.admission-scroll-cue {
+  position: absolute;
+  right: 0;
+  bottom: clamp(1.15rem, 2.3vw, 1.75rem);
+  left: 0;
+  display: grid;
+  justify-items: center;
+  gap: 0.45rem;
+  width: max-content;
+  margin-inline: auto;
+  color: rgba(35, 73, 92, 0.68);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  i {
+    display: grid;
+    justify-items: center;
+    color: rgba(35, 73, 92, 0.62);
+    animation: admission-scroll-bounce 2.2s ease-in-out infinite;
+  }
+
+  b {
+    display: block;
+    width: 1.18rem;
+    height: 1.18rem;
+    border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+  }
+
+  b + b {
+    margin-top: -0.38rem;
+    opacity: 0.72;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--ink-2);
+
+    i {
+      color: var(--ink-2);
+    }
+  }
+}
+
+@keyframes admission-scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.24rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .admission-scroll-cue i {
+    animation: none;
+  }
+}
+
 .testimonials {
   width: min(var(--container), calc(100vw - 2.5rem));
   margin: 0 auto;
@@ -1849,29 +1906,89 @@ p {
   position: absolute;
   top: 18vh;
   right: 7vw;
-  display: grid;
-  justify-items: center;
-  gap: 0.25rem;
   width: 7.4rem;
   opacity: 0.95;
   pointer-events: auto;
 
-  img {
-    width: 6rem;
-    height: auto;
-    filter: drop-shadow(0 10px 18px rgba(35, 73, 92, 0.16));
+  &__toggle {
+    display: grid;
+    justify-items: center;
+    gap: 0.25rem;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+
+    img {
+      width: 6rem;
+      height: auto;
+      filter: drop-shadow(0 10px 18px rgba(35, 73, 92, 0.16));
+    }
+
+    span {
+      border-radius: 999px;
+      padding: 0.38rem 0.72rem;
+      background: rgba(255, 255, 255, 0.88);
+      color: var(--ink-2);
+      font-size: 0.76rem;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 10px 24px rgba(35, 73, 92, 0.12);
+      white-space: nowrap;
+    }
   }
 
-  span {
-    border-radius: 999px;
-    padding: 0.38rem 0.72rem;
-    background: rgba(255, 255, 255, 0.88);
-    color: var(--ink-2);
-    font-size: 0.76rem;
-    font-weight: 900;
-    line-height: 1;
-    box-shadow: 0 10px 24px rgba(35, 73, 92, 0.12);
-    white-space: nowrap;
+  &__actions {
+    position: absolute;
+    right: calc(100% + 0.55rem);
+    bottom: 0.2rem;
+    display: grid;
+    gap: 0.45rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0.5rem) scale(0.98);
+    transform-origin: right bottom;
+    transition: opacity 180ms ease, transform 180ms ease;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      min-width: 7.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.84);
+      border-radius: 999px;
+      padding: 0.48rem 0.72rem;
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--ink-2);
+      box-shadow: 0 12px 28px rgba(35, 73, 92, 0.14);
+      font-size: 0.78rem;
+      font-weight: 850;
+      line-height: 1;
+      white-space: nowrap;
+      transition: background 180ms ease, transform 180ms ease;
+
+      &:hover,
+      &:focus-visible {
+        background: var(--sky-soft);
+        transform: translateX(-0.15rem);
+      }
+    }
+
+    svg {
+      width: 1.05rem;
+      height: 1.05rem;
+      fill: currentColor;
+    }
+  }
+
+  &.is-open {
+    .floating-star__actions {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0) scale(1);
+    }
   }
 }
 
@@ -2015,7 +2132,7 @@ p {
     }
 
     &:nth-child(3n + 2) {
-      --pillar-overlay: linear-gradient(180deg, rgba(241, 183, 198, 0.04) 0%, rgba(241, 183, 198, 0.12) 45%, rgba(241, 183, 198, 0.46) 62%, rgba(241, 183, 198, 0.88) 100%);
+      --pillar-overlay: linear-gradient(180deg, rgba(216, 176, 178, 0.04) 0%, rgba(216, 176, 178, 0.12) 45%, rgba(216, 176, 178, 0.46) 62%, rgba(216, 176, 178, 0.88) 100%);
     }
 
     &:nth-child(3n) {
@@ -2392,20 +2509,31 @@ p {
   .floating-star {
     top: 22vh;
     right: 0.85rem;
-    display: grid;
     width: 4.65rem;
     opacity: 0.82;
 
-    img {
-      width: 3.45rem;
-      filter: drop-shadow(0 8px 14px rgba(35, 73, 92, 0.14));
+    &__toggle {
+      img {
+        width: 3.45rem;
+        filter: drop-shadow(0 8px 14px rgba(35, 73, 92, 0.14));
+      }
+
+      span {
+        display: inline-flex;
+        padding: 0.28rem 0.52rem;
+        font-size: 0.62rem;
+        letter-spacing: 0;
+      }
     }
 
-    span {
-      display: inline-flex;
-      padding: 0.28rem 0.52rem;
-      font-size: 0.62rem;
-      letter-spacing: 0;
+    &__actions {
+      right: calc(100% + 0.35rem);
+
+      a {
+        min-width: 6.45rem;
+        padding: 0.42rem 0.6rem;
+        font-size: 0.7rem;
+      }
     }
   }
 

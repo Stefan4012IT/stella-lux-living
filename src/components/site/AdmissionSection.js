@@ -41,6 +41,14 @@ export default function AdmissionSection({ content }) {
             ))}
           </div>
         </div>
+
+        <a className="admission-scroll-cue motion-reveal" href="#kontakt" aria-label={content.admission.continueToForm}>
+          <span>{content.admission.continueToForm}</span>
+          <i aria-hidden="true">
+            <b />
+            <b />
+          </i>
+        </a>
       </div>
     </section>
   );

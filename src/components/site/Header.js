@@ -5,7 +5,7 @@ import MobileNavigation from "@/components/ui/MobileNavigation";
 import { assetPath } from "@/lib/paths";
 
 export default function Header({ locale, content }) {
-  const navLinks = ["#section-1", "#section-2", "#section-3", "#admission-card"];
+  const navLinks = ["#admission-card", "#section-0", "#age-groups", "#section-2", "#section-1"];
 
   return (
     <header className="site-header">

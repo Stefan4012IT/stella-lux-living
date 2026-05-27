@@ -6,7 +6,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux je premium predškolska ustanova u kompleksu Lux 51, sa više od 500 m² prostora, Reggio inspirisanim pristupom i pravom na gradsku subvenciju.",
     },
-    nav: ["Iskustvo", "Prostor", "Program", "Upis"],
+    nav: ["Upis", "O nama", "Program", "Prostor", "Zašto Stella?"],
     headerCta: "Zakažite termin",
     hero: {
       eyebrow: "Lux 51, Bežanijska kosa",
@@ -35,8 +35,8 @@ export const stellaLuxContent = {
       text: "Stella je zvezda, jer svako dete nosi svoj jedinstveni sjaj. Uz razumevanje razvojnih potreba deteta i podsticajno okruženje, deca grade samopouzdanje, sigurnost, empatiju, radoznalost i poverenje u sebe. Kroz svakodnevne aktivnosti uče da povezuju znanja, postavljaju pitanja, osmišljavaju rešenja i razvijaju veštine važne za život. I da svako od njih zasija svojim najjačim sjajem.",
     },
     ageGroups: {
-      eyebrow: "Za sve uzraste",
-      title: "Pažnja prilagođena svakoj fazi odrastanja.",
+      eyebrow: "Siguran početak",
+      title: "Jedinstveni vaspitno-obrazovni pristup prilagođen svakoj fazi odrastanja.",
       text: "Vaspitni i obrazovni pristup prilagođen je potrebama deteta, njegovom uzrastu, interesovanjima i tempu razvoja, kako bi svako dete imalo podršku da uči, istražuje i napreduje na način koji mu najviše odgovara.",
       items: [
         {
@@ -51,7 +51,7 @@ export const stellaLuxContent = {
         },
         {
           age: "4-5 godina",
-          title: "Kreativni istraživači",
+          title: "Razigrani kreativci",
           text: "Mašta, umetnost, pitanja i mali projekti kroz koje deca otkrivaju svoje ideje i interesovanja.",
         },
         {
@@ -61,7 +61,7 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsEyebrow: "Istraživači mašte",
+    pillarsEyebrow: "Otključavanje talenata i potencijala",
     pillarsTitle: "Zašto je Stella Lux jedinstven koncept za srećno odrastanje?",
     pillarsText:
       "U Stella Lux vrtiću deca rastu u pažljivo osmišljenom okruženju koje spaja toplinu, igru, istraživanje i savremeni vaspitno-obrazovni pristup. Svaki detalj prostora, programa i odnosa sa decom usmeren je ka sigurnosti, samopouzdanju i celovitom razvoju.",
@@ -143,10 +143,10 @@ export const stellaLuxContent = {
         },
         {
           title: "Art centar",
-          text: "Slikanje, crtanje, oblikovanje, muzika i kreativno izražavanje kroz različite materijale i tehnike.",
+          text: "Kroz Centar za razvoj umetnosti, deca istražuju slikanje, crtanje, oblikovanje, muziku i kreativno izražavanje različitim materijalima i tehnikama.",
         },
         {
-          title: "Učenje napolju",
+          title: "Boravak i učenje u prirodi",
           text: "Boravak u dvorištu, prirodi i otvorenom prostoru, kroz igru, kretanje i istraživanje okruženja.",
         },
         {
@@ -195,6 +195,7 @@ export const stellaLuxContent = {
       title: "Vaš prvi korak ka Stella Lux iskustvu.",
       text: "Upis započinje jednostavno i smireno: pošaljite upit, upoznajte prostor i tim, a zatim zajedno definišemo najbolji ritam adaptacije za vaše dete.",
       steps: ["Pošaljite upit", "Zakažite obilazak vrtića", "Rezervišite mesto", "Započnite gentle adaptation proces"],
+      continueToForm: "Nastavite do forme za prijavu",
     },
     testimonials: [
       {
@@ -227,6 +228,11 @@ export const stellaLuxContent = {
       title: "Mali koraci danas, velika sigurnost za sutra.",
       primary: "Zakažite obilazak",
       secondary: "Pozovite nas",
+      call: "Pozovite",
+      viber: "Viber",
+      whatsapp: "WhatsApp",
+      openContactActions: "Otvori opcije za kontakt",
+      closeContactActions: "Zatvori opcije za kontakt",
     },
     contactForm: {
       eyebrow: "Hajde da se upoznamo",
@@ -267,7 +273,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux is a premium preschool in Lux 51 with more than 500 sqm of designed space, a Reggio-inspired approach and accredited early years care.",
     },
-    nav: ["Experience", "Space", "Program", "Admissions"],
+    nav: ["Admissions", "About us", "Program", "Space", "Why Stella?"],
     headerCta: "Schedule a visit",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",
@@ -291,8 +297,8 @@ export const stellaLuxContent = {
       text: "Stella means star, because every child carries a unique light. With an understanding of each child's developmental needs and a stimulating environment, children build confidence, security, empathy, curiosity and trust in themselves. Through everyday activities, they learn to connect knowledge, ask questions, devise solutions and develop skills for life. So each of them can shine with their brightest light.",
     },
     ageGroups: {
-      eyebrow: "For all ages",
-      title: "Care shaped around every stage of growing up.",
+      eyebrow: "A safe beginning",
+      title: "A unique educational approach tailored to every stage of growing up.",
       text: "Our educational approach is adapted to each child's needs, age, interests and pace of development, so every child receives the support to learn, explore and progress in the way that suits them best.",
       items: [
         {
@@ -307,7 +313,7 @@ export const stellaLuxContent = {
         },
         {
           age: "4-5 years",
-          title: "Creative explorers",
+          title: "Playful creators",
           text: "Imagination, art, questions and small projects through which children discover their ideas and interests.",
         },
         {
@@ -317,7 +323,7 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsEyebrow: "Explorers of imagination",
+    pillarsEyebrow: "Unlocking talents and potential",
     pillarsTitle: "Why is Stella Lux a unique concept for happy growing up?",
     pillarsText:
       "At Stella Lux, children grow in a thoughtfully designed environment that brings together warmth, play, exploration and a modern educational approach. Every detail of the space, program and relationships with children is directed toward safety, confidence and holistic development.",
@@ -391,8 +397,8 @@ export const stellaLuxContent = {
       items: [
         { title: "English language", text: "Language introduction through play, songs, stories, movement and everyday communication." },
         { title: "Science and research", text: "Activities that encourage children to ask questions, observe, reason and discover the world around them." },
-        { title: "Art center", text: "Painting, drawing, shaping, music and creative expression through different materials and techniques." },
-        { title: "Outdoor learning", text: "Time in the yard, nature and open spaces through play, movement and exploration." },
+        { title: "Art center", text: "Through the Center for Arts Development, children explore painting, drawing, modeling, music and creative expression using a variety of materials and techniques." },
+        { title: "Time and learning in nature", text: "Time in the yard, nature and open spaces through play, movement and exploration." },
         { title: "Cultural visits", text: "Visits to theatres, museums, galleries and other places that bring culture and the wider world closer to children." },
         { title: "Practical life skills", text: "Activities that develop independence, responsibility, fine motor skills and everyday habits." },
         { title: "Project-based learning", text: "Thematic projects where children explore, collaborate, connect knowledge and reach their own conclusions." },
@@ -421,6 +427,7 @@ export const stellaLuxContent = {
       title: "Your first step into the Stella Lux experience.",
       text: "Admissions begin calmly and simply: send an inquiry, visit the space and meet the team, then we define the best adaptation rhythm for your child together.",
       steps: ["Send an inquiry", "Schedule a private tour", "Reserve a place", "Begin a gentle adaptation process"],
+      continueToForm: "Continue to the inquiry form",
     },
     testimonials: [
       {
@@ -448,6 +455,11 @@ export const stellaLuxContent = {
       title: "Small steps today, greater confidence tomorrow.",
       primary: "Schedule a tour",
       secondary: "Call us",
+      call: "Call",
+      viber: "Viber",
+      whatsapp: "WhatsApp",
+      openContactActions: "Open contact options",
+      closeContactActions: "Close contact options",
     },
     contactForm: {
       eyebrow: "Let's get acquainted",
@@ -488,7 +500,7 @@ export const stellaLuxContent = {
       description:
         "Stella Lux - premium дошкольное учреждение в комплексе Lux 51: более 500 м2 пространства, Reggio-inspired подход и аккредитованная программа.",
     },
-    nav: ["Опыт", "Пространство", "Программа", "Прием"],
+    nav: ["Прием", "О нас", "Программа", "Пространство", "Почему Stella?"],
     headerCta: "Записаться",
     hero: {
       eyebrow: "Lux 51, Bezanijska kosa",
@@ -512,8 +524,8 @@ export const stellaLuxContent = {
       text: "Stella означает звезда, потому что каждый ребенок несет свой особенный свет. Благодаря пониманию потребностей развития ребенка и стимулирующей среде дети развивают уверенность, чувство безопасности, эмпатию, любознательность и доверие к себе. В ежедневных занятиях они учатся связывать знания, задавать вопросы, находить решения и развивать важные для жизни навыки. Чтобы каждый из них мог засиять своим самым ярким светом.",
     },
     ageGroups: {
-      eyebrow: "Для всех возрастов",
-      title: "Забота, адаптированная к каждому этапу развития.",
+      eyebrow: "Уверенный старт",
+      title: "Уникальный воспитательно-образовательный подход, адаптированный к каждому этапу взросления.",
       text: "Наш воспитательный и образовательный подход адаптирован к потребностям, возрасту, интересам и темпу развития ребенка, чтобы каждый ребенок получал поддержку для обучения, исследований и роста наиболее подходящим ему способом.",
       items: [
         {
@@ -528,7 +540,7 @@ export const stellaLuxContent = {
         },
         {
           age: "4-5 лет",
-          title: "Творческие исследователи",
+          title: "Творцы в игре",
           text: "Воображение, искусство, вопросы и маленькие проекты, в которых дети раскрывают свои идеи и интересы.",
         },
         {
@@ -538,7 +550,7 @@ export const stellaLuxContent = {
         },
       ],
     },
-    pillarsEyebrow: "Исследователи воображения",
+    pillarsEyebrow: "Раскрытие талантов и потенциала",
     pillarsTitle: "Почему Stella Lux - уникальная концепция счастливого взросления?",
     pillarsText:
       "В Stella Lux дети растут в тщательно продуманной среде, объединяющей тепло, игру, исследования и современный образовательный подход. Каждая деталь пространства, программы и отношений с детьми направлена на безопасность, уверенность в себе и всестороннее развитие.",
@@ -612,8 +624,8 @@ export const stellaLuxContent = {
       items: [
         { title: "Английский язык", text: "Знакомство с языком через игру, песни, истории, движение и ежедневное общение." },
         { title: "Наука и исследования", text: "Занятия, которые побуждают детей задавать вопросы, наблюдать, делать выводы и открывать мир вокруг себя." },
-        { title: "Арт-центр", text: "Живопись, рисунок, лепка, музыка и творческое выражение через разные материалы и техники." },
-        { title: "Обучение на улице", text: "Время во дворе, на природе и открытом пространстве через игру, движение и исследование окружения." },
+        { title: "Арт-центр", text: "В Центре развития искусства дети исследуют живопись, рисунок, лепку, музыку и творческое самовыражение с помощью разнообразных материалов и техник." },
+        { title: "Пребывание и обучение на природе", text: "Время во дворе, на природе и открытом пространстве через игру, движение и исследование окружения." },
         { title: "Культурные визиты", text: "Посещения театров, музеев, галерей и других мест, которые знакомят детей с культурой и миром вокруг." },
         { title: "Практические жизненные навыки", text: "Занятия, развивающие самостоятельность, ответственность, мелкую моторику и ежедневные привычки." },
         { title: "Проектное обучение", text: "Тематические проекты, в которых дети исследуют, сотрудничают, связывают знания и приходят к собственным выводам." },
@@ -642,6 +654,7 @@ export const stellaLuxContent = {
       title: "Ваш первый шаг к Stella Lux опыту.",
       text: "Поступление начинается спокойно и просто: отправьте запрос, познакомьтесь с пространством и командой, а затем вместе определим лучший ритм адаптации для вашего ребенка.",
       steps: ["Отправьте запрос", "Запишитесь на визит", "Зарезервируйте место", "Начните мягкую адаптацию"],
+      continueToForm: "Перейти к форме заявки",
     },
     testimonials: [
       {
@@ -669,6 +682,11 @@ export const stellaLuxContent = {
       title: "Маленькие шаги сегодня, большая уверенность завтра.",
       primary: "Записаться на визит",
       secondary: "Позвонить",
+      call: "Позвонить",
+      viber: "Viber",
+      whatsapp: "WhatsApp",
+      openContactActions: "Открыть способы связи",
+      closeContactActions: "Закрыть способы связи",
     },
     contactForm: {
       eyebrow: "Давайте познакомимся",
